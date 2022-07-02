@@ -1,0 +1,41 @@
+{
+  "name": "rpc-omnilite",
+  "version": "1.0.0",
+  "description": "A TypeScript library to make RPC and HTTP REST requests to OmniLite Litecoin Omni Layer. ",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IndigoNakamoto/rpc-omnilite.git"
+  },
+  "keywords": [
+    "RPC",
+    "Litecoin",
+    "OmniLite",
+    "Omni"
+  ],
+  "author": "twitter.com/indigo_nakamoto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IndigoNakamoto/rpc-omnilite/issues"
+  },
+  "homepage": "https://github.com/IndigoNakamoto/rpc-omnilite#readme",
+  "dependencies": {
+    "rpc-bitcoin": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint": "^8.18.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "mocha": "^10.0.0",
+    "nock": "^13.2.7",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  }
+}
