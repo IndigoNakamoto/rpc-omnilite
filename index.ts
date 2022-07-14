@@ -1,1 +1,3 @@
-export * from "./src/rpc";
+import RPCOmnilite from "./src/rpc";
+
+export default RPCOmnilite;

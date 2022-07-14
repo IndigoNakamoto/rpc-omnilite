@@ -1,10 +1,21 @@
 {
-  "name": "rpc-omnilite",
+  "name": "@indigonakamoto/rpc-omnilite",
   "version": "1.0.0",
   "description": "A TypeScript library to make RPC and HTTP REST requests to OmniLite Litecoin Omni Layer. ",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -fr build && tsc",
+    "fresh-install": "rm -fr node_modules && rm -f package-lock.json && npm install",
+    "prettier": "prettier -c \"**/*.{md,ts,json}\"",
+    "prettier:build": "prettier -c \"./build/**/*.{js,d.ts}\" --write",
+    "prettier-write": "npm run prettier -- --write",
+    "lint": "eslint --ext .ts ./",
+    "lint:build": "eslint --ext .js ./ --fix",
+    "lint-fix": "npm run lint -- --fix",
+    "test": "mocha -r ts-node/register --full-trace --ui tdd --bail --extension ts",
+    "prepublishOnly": "npm run prettier && npm run lint && npm run build && npm run prettier:build && npm run lint:build",
+    "postpublish": "rm -fr build",
+    "snyk-protect": "snyk protect"
   },
   "repository": {
     "type": "git",
@@ -37,5 +48,8 @@
     "prettier": "^2.7.1",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.4"
+  },
+  "directories": {
+    "test": "test"
   }
 }
