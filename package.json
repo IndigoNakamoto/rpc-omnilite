@@ -1,7 +1,7 @@
 {
-  "name": "rpc-bitcoin",
-  "version": "2.0.0",
-  "description": "A TypeScript library to make RPC and HTTP REST requests to Bitcoin Core",
+  "name": "@indigonakamoto/rpc-omnilite",
+  "version": "1.0.4",
+  "description": "A TypeScript library to make RPC and HTTP REST requests to OmniLite Litecoin Omni Layer. ",
   "main": "build/index.js",
   "type": "commonjs",
   "engines": {
@@ -25,18 +25,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vansergen/rpc-bitcoin.git"
+    "url": "git+https://github.com/IndigoNakamoto/rpc-omnilite.git"
   },
   "keywords": [
     "RPC",
-    "Bitcoin"
+    "Litecoin",
+    "OmniLite",
+    "Omni"
   ],
-  "author": "Sergey Bakulin",
+  "author": "twitter.com/indigo_nakamoto",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vansergen/rpc-bitcoin/issues"
+    "url": "https://github.com/IndigoNakamoto/rpc-omnilite/issues"
   },
-  "homepage": "https://github.com/vansergen/rpc-bitcoin#readme",
+  "homepage": "https://github.com/IndigoNakamoto/rpc-omnilite#readme",
   "devDependencies": {
     "@types/mocha": "^7.0.2",
     "@typescript-eslint/eslint-plugin": "^2.25.0",

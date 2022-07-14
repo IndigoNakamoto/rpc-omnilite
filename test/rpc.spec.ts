@@ -181,8 +181,7 @@ suite("RPCClient", () => {
       const params = { blockhash, verbosity };
       const request = { params, method: "getblock", id, jsonrpc };
       const result = {
-        hash:
-          "000000004182034f427d463b92162d35d0accef9ea0c5354a87e870ca1815b4c",
+        hash: "000000004182034f427d463b92162d35d0accef9ea0c5354a87e870ca1815b4c",
         confirmations: 3383,
         strippedsize: 123950,
         size: 178661,
@@ -194,10 +193,8 @@ suite("RPCClient", () => {
           "d3f3bb31c88119d341f9a5598a213655bc0168a83a9d9cb80ac4386485b3c0f5",
         tx: [
           {
-            txid:
-              "6adb52bcfbc0f88378eed06783d5dbb3edd649f485c3fdc2f38e779e724f612a",
-            hash:
-              "2b1826bdd156e6f86248404da4f51febd58eaa8abdb85572302bb27af89a4089",
+            txid: "6adb52bcfbc0f88378eed06783d5dbb3edd649f485c3fdc2f38e779e724f612a",
+            hash: "2b1826bdd156e6f86248404da4f51febd58eaa8abdb85572302bb27af89a4089",
             version: 1,
             size: 197,
             vsize: 170,
@@ -215,8 +212,7 @@ suite("RPCClient", () => {
                 value: 0.53670882,
                 n: 0,
                 scriptPubKey: {
-                  asm:
-                    "OP_HASH160 b4316d69836fe185d3d4ca234e90a7a5ce6491ab OP_EQUAL",
+                  asm: "OP_HASH160 b4316d69836fe185d3d4ca234e90a7a5ce6491ab OP_EQUAL",
                   hex: "a914b4316d69836fe185d3d4ca234e90a7a5ce6491ab87",
                   reqSigs: 1,
                   type: "scripthash",
@@ -227,22 +223,17 @@ suite("RPCClient", () => {
                 value: 0,
                 n: 1,
                 scriptPubKey: {
-                  asm:
-                    "OP_RETURN aa21a9ed3116a1d2c6dc9cf601112589ce7d2334acd8a196fb02ceacddf6eed2bf4b72b5",
-                  hex:
-                    "6a24aa21a9ed3116a1d2c6dc9cf601112589ce7d2334acd8a196fb02ceacddf6eed2bf4b72b5",
+                  asm: "OP_RETURN aa21a9ed3116a1d2c6dc9cf601112589ce7d2334acd8a196fb02ceacddf6eed2bf4b72b5",
+                  hex: "6a24aa21a9ed3116a1d2c6dc9cf601112589ce7d2334acd8a196fb02ceacddf6eed2bf4b72b5",
                   type: "nulldata",
                 },
               },
             ],
-            hex:
-              "010000000001010000000000000000000000000000000000000000000000000000000000000000ffffffff1f036f1d180459fe965d08f80000014b0700000c2f746573746e65747465722f0000000002e2f332030000000017a914b4316d69836fe185d3d4ca234e90a7a5ce6491ab870000000000000000266a24aa21a9ed3116a1d2c6dc9cf601112589ce7d2334acd8a196fb02ceacddf6eed2bf4b72b50120000000000000000000000000000000000000000000000000000000000000000000000000",
+            hex: "010000000001010000000000000000000000000000000000000000000000000000000000000000ffffffff1f036f1d180459fe965d08f80000014b0700000c2f746573746e65747465722f0000000002e2f332030000000017a914b4316d69836fe185d3d4ca234e90a7a5ce6491ab870000000000000000266a24aa21a9ed3116a1d2c6dc9cf601112589ce7d2334acd8a196fb02ceacddf6eed2bf4b72b50120000000000000000000000000000000000000000000000000000000000000000000000000",
           },
           {
-            txid:
-              "5416f86c8d41840ff9c09d997372a7f140e78b765252583fb23f74e0992c6e71",
-            hash:
-              "5416f86c8d41840ff9c09d997372a7f140e78b765252583fb23f74e0992c6e71",
+            txid: "5416f86c8d41840ff9c09d997372a7f140e78b765252583fb23f74e0992c6e71",
+            hash: "5416f86c8d41840ff9c09d997372a7f140e78b765252583fb23f74e0992c6e71",
             version: 1,
             size: 226,
             vsize: 226,
@@ -250,14 +241,11 @@ suite("RPCClient", () => {
             locktime: 0,
             vin: [
               {
-                txid:
-                  "623145a17de90d190f3b2379672b3bb11f19f73b3be4c412cea1f60f9bbe7344",
+                txid: "623145a17de90d190f3b2379672b3bb11f19f73b3be4c412cea1f60f9bbe7344",
                 vout: 1,
                 scriptSig: {
-                  asm:
-                    "304502210098a6a7a2329a7373ff838b3e816e8b48f94238dfbe08add7896ff95127ebfc310220541302168ae986ec6abbb0c5eea95f069621166fe841ba965ed6ea3bb351735c[ALL] 0396cfa148d2fc150d225262836aaf4ed98da771a9c2f6bc54da03d402d3f1a384",
-                  hex:
-                    "48304502210098a6a7a2329a7373ff838b3e816e8b48f94238dfbe08add7896ff95127ebfc310220541302168ae986ec6abbb0c5eea95f069621166fe841ba965ed6ea3bb351735c01210396cfa148d2fc150d225262836aaf4ed98da771a9c2f6bc54da03d402d3f1a384",
+                  asm: "304502210098a6a7a2329a7373ff838b3e816e8b48f94238dfbe08add7896ff95127ebfc310220541302168ae986ec6abbb0c5eea95f069621166fe841ba965ed6ea3bb351735c[ALL] 0396cfa148d2fc150d225262836aaf4ed98da771a9c2f6bc54da03d402d3f1a384",
+                  hex: "48304502210098a6a7a2329a7373ff838b3e816e8b48f94238dfbe08add7896ff95127ebfc310220541302168ae986ec6abbb0c5eea95f069621166fe841ba965ed6ea3bb351735c01210396cfa148d2fc150d225262836aaf4ed98da771a9c2f6bc54da03d402d3f1a384",
                 },
                 sequence: 4294967295,
               },
@@ -267,8 +255,7 @@ suite("RPCClient", () => {
                 value: 5e-8,
                 n: 0,
                 scriptPubKey: {
-                  asm:
-                    "OP_DUP OP_HASH160 ef6639af5e3f5beb577f327f09ec3b0708cb03f1 OP_EQUALVERIFY OP_CHECKSIG",
+                  asm: "OP_DUP OP_HASH160 ef6639af5e3f5beb577f327f09ec3b0708cb03f1 OP_EQUALVERIFY OP_CHECKSIG",
                   hex: "76a914ef6639af5e3f5beb577f327f09ec3b0708cb03f188ac",
                   reqSigs: 1,
                   type: "pubkeyhash",
@@ -279,8 +266,7 @@ suite("RPCClient", () => {
                 value: 0.40164686,
                 n: 1,
                 scriptPubKey: {
-                  asm:
-                    "OP_DUP OP_HASH160 60ade08bbf58068ccbed250d4ee64c0a827745d3 OP_EQUALVERIFY OP_CHECKSIG",
+                  asm: "OP_DUP OP_HASH160 60ade08bbf58068ccbed250d4ee64c0a827745d3 OP_EQUALVERIFY OP_CHECKSIG",
                   hex: "76a91460ade08bbf58068ccbed250d4ee64c0a827745d388ac",
                   reqSigs: 1,
                   type: "pubkeyhash",
@@ -288,8 +274,7 @@ suite("RPCClient", () => {
                 },
               },
             ],
-            hex:
-              "01000000014473be9b0ff6a1ce12c4e43b3bf7191fb13b2b6779233b0f190de97da1453162010000006b48304502210098a6a7a2329a7373ff838b3e816e8b48f94238dfbe08add7896ff95127ebfc310220541302168ae986ec6abbb0c5eea95f069621166fe841ba965ed6ea3bb351735c01210396cfa148d2fc150d225262836aaf4ed98da771a9c2f6bc54da03d402d3f1a384ffffffff0205000000000000001976a914ef6639af5e3f5beb577f327f09ec3b0708cb03f188ac4edd6402000000001976a91460ade08bbf58068ccbed250d4ee64c0a827745d388ac00000000",
+            hex: "01000000014473be9b0ff6a1ce12c4e43b3bf7191fb13b2b6779233b0f190de97da1453162010000006b48304502210098a6a7a2329a7373ff838b3e816e8b48f94238dfbe08add7896ff95127ebfc310220541302168ae986ec6abbb0c5eea95f069621166fe841ba965ed6ea3bb351735c01210396cfa148d2fc150d225262836aaf4ed98da771a9c2f6bc54da03d402d3f1a384ffffffff0205000000000000001976a914ef6639af5e3f5beb577f327f09ec3b0708cb03f188ac4edd6402000000001976a91460ade08bbf58068ccbed250d4ee64c0a827745d388ac00000000",
           },
         ],
         time: 1570176600,
@@ -451,29 +436,25 @@ suite("RPCClient", () => {
       const result = [
         {
           height: 1583784,
-          hash:
-            "0000000071434abcdf7b2a82fb3005a67fe9f458e542a586313f5a7dc671a0c9",
+          hash: "0000000071434abcdf7b2a82fb3005a67fe9f458e542a586313f5a7dc671a0c9",
           branchlen: 0,
           status: "active",
         },
         {
           height: 1580960,
-          hash:
-            "000000006999656106c726515ccfc34d160a5fa299ddb6bb278598b2feefaa7e",
+          hash: "000000006999656106c726515ccfc34d160a5fa299ddb6bb278598b2feefaa7e",
           branchlen: 1,
           status: "valid-fork",
         },
         {
           height: 1580787,
-          hash:
-            "0000000029515fe9800761af4c19a087525ad9f3a1e41c4d1b136993711c3f83",
+          hash: "0000000029515fe9800761af4c19a087525ad9f3a1e41c4d1b136993711c3f83",
           branchlen: 1,
           status: "valid-fork",
         },
         {
           height: 1414433,
-          hash:
-            "00000000210004840364b52bc5e455d888f164e4264a4fec06a514b67e9d5722",
+          hash: "00000000210004840364b52bc5e455d888f164e4264a4fec06a514b67e9d5722",
           branchlen: 23,
           status: "headers-only",
         },
@@ -859,8 +840,7 @@ suite("RPCClient", () => {
         searched_items: 22946468,
         unspents: [
           {
-            txid:
-              "ab78587c07c039d1e55dc0efc959ba872693f98dce9e749a53582125e692f408",
+            txid: "ab78587c07c039d1e55dc0efc959ba872693f98dce9e749a53582125e692f408",
             vout: 1,
             scriptPubKey: "76a914bdad1f4d02035b61fb1d237410e85d8402a1187d88ac",
             desc: "addr(mxosQ4CvQR8ipfWdRktyB3u16tauEdamGc)#7ca3vlzt",
@@ -868,8 +848,7 @@ suite("RPCClient", () => {
             height: 1583799,
           },
           {
-            txid:
-              "ed6f71276d0624989e8d572c98386e35c646cdce062c73ae0a1f554887d41aa5",
+            txid: "ed6f71276d0624989e8d572c98386e35c646cdce062c73ae0a1f554887d41aa5",
             vout: 1,
             scriptPubKey: "76a914bdad1f4d02035b61fb1d237410e85d8402a1187d88ac",
             desc: "addr(mxosQ4CvQR8ipfWdRktyB3u16tauEdamGc)#7ca3vlzt",
@@ -877,8 +856,7 @@ suite("RPCClient", () => {
             height: 1352790,
           },
           {
-            txid:
-              "801d5821586dd0dc10123b17d284983d6c835b8aa616e0ee828721c9073ba7ea",
+            txid: "801d5821586dd0dc10123b17d284983d6c835b8aa616e0ee828721c9073ba7ea",
             vout: 1,
             scriptPubKey: "76a914bdad1f4d02035b61fb1d237410e85d8402a1187d88ac",
             desc: "addr(mxosQ4CvQR8ipfWdRktyB3u16tauEdamGc)#7ca3vlzt",
@@ -1106,24 +1084,18 @@ suite("RPCClient", () => {
           "00000000001eae7e020859bd4e814194768171fafa32ec0ff29a7f7718c68e3e",
         transactions: [
           {
-            data:
-              "02000000011dee34a06e97aa79e62a962deaaf36af4ade5cfa9d368e59b5f07d7a95f56a9c000000006a4730440220122a6742b92f4f7028d180a8439cd28923ac786c7014a511ff6a43a0b1f0a19c02201cef3090451ce5c40a11e511e00e906ff44547a21d96ba639b6f56bf43cdf88a012103842711dd54b0e087bc458952e482ef9b7605a74e02267d8e613e90c900b46b2ffeffffff029fe50a000000000017a914c6953707c8fe999f1597445182a316efc8c9a4f087480504000000000017a914895227f5e3b944768038354203245e3c8934acf8870e2b1800",
-            txid:
-              "304df7393fd7a5fa6ca3010f52c19a1b11294deb51040645ebc09c76f0c39e16",
-            hash:
-              "304df7393fd7a5fa6ca3010f52c19a1b11294deb51040645ebc09c76f0c39e16",
+            data: "02000000011dee34a06e97aa79e62a962deaaf36af4ade5cfa9d368e59b5f07d7a95f56a9c000000006a4730440220122a6742b92f4f7028d180a8439cd28923ac786c7014a511ff6a43a0b1f0a19c02201cef3090451ce5c40a11e511e00e906ff44547a21d96ba639b6f56bf43cdf88a012103842711dd54b0e087bc458952e482ef9b7605a74e02267d8e613e90c900b46b2ffeffffff029fe50a000000000017a914c6953707c8fe999f1597445182a316efc8c9a4f087480504000000000017a914895227f5e3b944768038354203245e3c8934acf8870e2b1800",
+            txid: "304df7393fd7a5fa6ca3010f52c19a1b11294deb51040645ebc09c76f0c39e16",
+            hash: "304df7393fd7a5fa6ca3010f52c19a1b11294deb51040645ebc09c76f0c39e16",
             depends: [],
             fee: 22361,
             sigops: 0,
             weight: 884,
           },
           {
-            data:
-              "02000000000101e451d098b58f159d1879155f3b358ac3f1c9bca1b899c1f11556cfe97dd38109010000001716001490f5c95ca55492835d7b96f205122954496520b2feffffff02eb5c8e210200000017a914dff56b87c21831d6bc8a84407ceedb43ac700b8b87febc37000000000017a914c8847d0cced847080f0bd1811af48f0cde3b8ed38702473044022039395e975051eb8b302fd0bc21b82b336571f6251afe9ecf59da8a5810cfb15802201b005281279f93f3945985c9419cb6d6fb5f2a8e57309f125e71edd6be07383c012102d63dbd2425c008dc5af42f75e35cb14ab12f2d79444dc722aacd7d0b6da8a2260e2b1800",
-            txid:
-              "be76e368477a3de6c2f4ee69c578019384dfaf05e69b4481bbc84997691175b5",
-            hash:
-              "23f676d0e98ff7c0ab6b118ca2fcf9f073cf7e916a5c61673eb36fb1c4f79221",
+            data: "02000000000101e451d098b58f159d1879155f3b358ac3f1c9bca1b899c1f11556cfe97dd38109010000001716001490f5c95ca55492835d7b96f205122954496520b2feffffff02eb5c8e210200000017a914dff56b87c21831d6bc8a84407ceedb43ac700b8b87febc37000000000017a914c8847d0cced847080f0bd1811af48f0cde3b8ed38702473044022039395e975051eb8b302fd0bc21b82b336571f6251afe9ecf59da8a5810cfb15802201b005281279f93f3945985c9419cb6d6fb5f2a8e57309f125e71edd6be07383c012102d63dbd2425c008dc5af42f75e35cb14ab12f2d79444dc722aacd7d0b6da8a2260e2b1800",
+            txid: "be76e368477a3de6c2f4ee69c578019384dfaf05e69b4481bbc84997691175b5",
+            hash: "23f676d0e98ff7c0ab6b118ca2fcf9f073cf7e916a5c61673eb36fb1c4f79221",
             depends: [],
             fee: 16796,
             sigops: 1,
@@ -1689,13 +1661,11 @@ suite("RPCClient", () => {
     test(".createpsbt()", async () => {
       const inputs = [
         {
-          txid:
-            "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
+          txid: "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
           vout: 1,
         },
         {
-          txid:
-            "ff758ffd73729be8afae0d683547f7840bdaee75ad5e5c464fb621b2509c366b",
+          txid: "ff758ffd73729be8afae0d683547f7840bdaee75ad5e5c464fb621b2509c366b",
           vout: 0,
         },
       ];
@@ -1724,13 +1694,11 @@ suite("RPCClient", () => {
     test(".createrawtransaction()", async () => {
       const inputs = [
         {
-          txid:
-            "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
+          txid: "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
           vout: 1,
         },
         {
-          txid:
-            "ff758ffd73729be8afae0d683547f7840bdaee75ad5e5c464fb621b2509c366b",
+          txid: "ff758ffd73729be8afae0d683547f7840bdaee75ad5e5c464fb621b2509c366b",
           vout: 0,
         },
       ];
@@ -1763,10 +1731,8 @@ suite("RPCClient", () => {
       const request = { params, method: "decodepsbt", id, jsonrpc };
       const result = {
         tx: {
-          txid:
-            "22ff139b2aaa971e3d8ed94dc8a70d82097b59ddc8f35d0e744461e96a4e9f1d",
-          hash:
-            "22ff139b2aaa971e3d8ed94dc8a70d82097b59ddc8f35d0e744461e96a4e9f1d",
+          txid: "22ff139b2aaa971e3d8ed94dc8a70d82097b59ddc8f35d0e744461e96a4e9f1d",
+          hash: "22ff139b2aaa971e3d8ed94dc8a70d82097b59ddc8f35d0e744461e96a4e9f1d",
           version: 2,
           size: 154,
           vsize: 154,
@@ -1774,15 +1740,13 @@ suite("RPCClient", () => {
           locktime: 1,
           vin: [
             {
-              txid:
-                "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
+              txid: "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
               vout: 1,
               scriptSig: { asm: "", hex: "" },
               sequence: 4294967293,
             },
             {
-              txid:
-                "ff758ffd73729be8afae0d683547f7840bdaee75ad5e5c464fb621b2509c366b",
+              txid: "ff758ffd73729be8afae0d683547f7840bdaee75ad5e5c464fb621b2509c366b",
               vout: 0,
               scriptSig: { asm: "", hex: "" },
               sequence: 4294967293,
@@ -1833,10 +1797,8 @@ suite("RPCClient", () => {
       const params = { hexstring, iswitness };
       const request = { params, method: "decoderawtransaction", id, jsonrpc };
       const result = {
-        txid:
-          "22ff139b2aaa971e3d8ed94dc8a70d82097b59ddc8f35d0e744461e96a4e9f1d",
-        hash:
-          "22ff139b2aaa971e3d8ed94dc8a70d82097b59ddc8f35d0e744461e96a4e9f1d",
+        txid: "22ff139b2aaa971e3d8ed94dc8a70d82097b59ddc8f35d0e744461e96a4e9f1d",
+        hash: "22ff139b2aaa971e3d8ed94dc8a70d82097b59ddc8f35d0e744461e96a4e9f1d",
         version: 2,
         size: 154,
         vsize: 154,
@@ -1844,15 +1806,13 @@ suite("RPCClient", () => {
         locktime: 1,
         vin: [
           {
-            txid:
-              "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
+            txid: "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
             vout: 1,
             scriptSig: { asm: "", hex: "" },
             sequence: 4294967293,
           },
           {
-            txid:
-              "ff758ffd73729be8afae0d683547f7840bdaee75ad5e5c464fb621b2509c366b",
+            txid: "ff758ffd73729be8afae0d683547f7840bdaee75ad5e5c464fb621b2509c366b",
             vout: 0,
             scriptSig: { asm: "", hex: "" },
             sequence: 4294967293,
@@ -1898,8 +1858,7 @@ suite("RPCClient", () => {
       const params = { hexstring };
       const request = { params, method: "decodescript", id, jsonrpc };
       const result = {
-        asm:
-          "2 031e925dbe43ca87bce874f4fb77ac0d6bb2dc1a9db93868fa27611b687775bd0b 02ffb8b66ba266797f1e33e5d177a6f9c72839992ccf11e97837054a8d3a8284bc 025bf696347321a5276aad08dfefff19dd09d3717bfc2ce521060f4247d31c37b5 3 OP_CHECKMULTISIG",
+        asm: "2 031e925dbe43ca87bce874f4fb77ac0d6bb2dc1a9db93868fa27611b687775bd0b 02ffb8b66ba266797f1e33e5d177a6f9c72839992ccf11e97837054a8d3a8284bc 025bf696347321a5276aad08dfefff19dd09d3717bfc2ce521060f4247d31c37b5 3 OP_CHECKMULTISIG",
         reqSigs: 2,
         type: "multisig",
         addresses: [
@@ -1909,10 +1868,8 @@ suite("RPCClient", () => {
         ],
         p2sh: "2NFnZXZPkTfKPmBbDY6EhmVZc4tNK3eyLcr",
         segwit: {
-          asm:
-            "0 cc753b00fe0605f9f01bacd56c716c14d12676f40ec9e46e2de742b1d9175517",
-          hex:
-            "0020cc753b00fe0605f9f01bacd56c716c14d12676f40ec9e46e2de742b1d9175517",
+          asm: "0 cc753b00fe0605f9f01bacd56c716c14d12676f40ec9e46e2de742b1d9175517",
+          hex: "0020cc753b00fe0605f9f01bacd56c716c14d12676f40ec9e46e2de742b1d9175517",
           reqSigs: 1,
           type: "witness_v0_scripthash",
           addresses: [
@@ -1937,8 +1894,7 @@ suite("RPCClient", () => {
       const params = { psbt, extract };
       const request = { params, method: "finalizepsbt", id, jsonrpc };
       const result = {
-        hex:
-          "020000000001027f9115bb880cf88190de6e6b4be7515670c2f6e79c367c09ae19eb2def432aa70000000000fdffffff29455878157141ce08642bec7365a88558596a70f9e23cb5d46c719f8611b6960100000000fdffffff0160823b00000000001600148035bc99c1327407ba8faa9592a251042986c81502473044022007a70711f0889028f4cb7fd01d20b1f96bb8a7def745b4394696fe032a4f5de102206b72cbe094466fc4358a2a130b02b539da774c6fa7006a7802feeea6a30c231801210283450124a3ca764e4d321fe9b3a700d5d446ee7343d786a5401c075c79ebdfea0247304402205b214bf05756874901f026ca2f61ac54f414d9681bf44e18bcec09f4a2ec78c80220705d68fff3b9883b63870be41fa08ec3940783c5b2cebe767002a67ffe53d5230121034e2dca4f2656f6f296b716317e5a3907b9753c74aa9f419495ff00b179067ef401000000",
+        hex: "020000000001027f9115bb880cf88190de6e6b4be7515670c2f6e79c367c09ae19eb2def432aa70000000000fdffffff29455878157141ce08642bec7365a88558596a70f9e23cb5d46c719f8611b6960100000000fdffffff0160823b00000000001600148035bc99c1327407ba8faa9592a251042986c81502473044022007a70711f0889028f4cb7fd01d20b1f96bb8a7def745b4394696fe032a4f5de102206b72cbe094466fc4358a2a130b02b539da774c6fa7006a7802feeea6a30c231801210283450124a3ca764e4d321fe9b3a700d5d446ee7343d786a5401c075c79ebdfea0247304402205b214bf05756874901f026ca2f61ac54f414d9681bf44e18bcec09f4a2ec78c80220705d68fff3b9883b63870be41fa08ec3940783c5b2cebe767002a67ffe53d5230121034e2dca4f2656f6f296b716317e5a3907b9753c74aa9f419495ff00b179067ef401000000",
         complete: true,
       };
       nock(uri)
@@ -1961,8 +1917,7 @@ suite("RPCClient", () => {
       const params = { hexstring, options, iswitness };
       const request = { params, method: "fundrawtransaction", id, jsonrpc };
       const result = {
-        hex:
-          "020000000229455878157141ce08642bec7365a88558596a70f9e23cb5d46c719f8611b6960000000000fdffffffa95716e643eed9055510fb925eb59b536ff496c642b2904ed5260c03574751d10000000000fdffffff02d4c52d00000000001600143bef1b30253a516128b176621f52f07f415c670240420f00000000001600148470e04e616ab6552d72e8284a32a293ff8a959b00000000",
+        hex: "020000000229455878157141ce08642bec7365a88558596a70f9e23cb5d46c719f8611b6960000000000fdffffffa95716e643eed9055510fb925eb59b536ff496c642b2904ed5260c03574751d10000000000fdffffff02d4c52d00000000001600143bef1b30253a516128b176621f52f07f415c670240420f00000000001600148470e04e616ab6552d72e8284a32a293ff8a959b00000000",
         fee: 0.00000236,
         changepos: 0,
       };
@@ -1985,10 +1940,8 @@ suite("RPCClient", () => {
       const request = { params, method: "getrawtransaction", id, jsonrpc };
       const result = {
         in_active_chain: true,
-        txid:
-          "a32ddaed3387a2bc0bb9a4f90bc6e84e5589335b97142848ad144efd38420eb2",
-        hash:
-          "a32ddaed3387a2bc0bb9a4f90bc6e84e5589335b97142848ad144efd38420eb2",
+        txid: "a32ddaed3387a2bc0bb9a4f90bc6e84e5589335b97142848ad144efd38420eb2",
+        hash: "a32ddaed3387a2bc0bb9a4f90bc6e84e5589335b97142848ad144efd38420eb2",
         version: 1,
         size: 190,
         vsize: 190,
@@ -1996,14 +1949,11 @@ suite("RPCClient", () => {
         locktime: 0,
         vin: [
           {
-            txid:
-              "2250db8ac157f4523e18ec9521bfb3c3249752d112dab14d4742ddce4ceb3189",
+            txid: "2250db8ac157f4523e18ec9521bfb3c3249752d112dab14d4742ddce4ceb3189",
             vout: 1,
             scriptSig: {
-              asm:
-                "3045022100d21fffc9343da1b2ec190c7084f8a69d201adcd88b880beb013fa4e0ab4158ad02205e0c362f844cc63539467b37d583128c7d2f7754864d08efe29cef98272688e2[ALL] 039c17e0e4ebd61c753fda99392658a692dbfdab430399b1e12221da6a4cda5dd9",
-              hex:
-                "483045022100d21fffc9343da1b2ec190c7084f8a69d201adcd88b880beb013fa4e0ab4158ad02205e0c362f844cc63539467b37d583128c7d2f7754864d08efe29cef98272688e20121039c17e0e4ebd61c753fda99392658a692dbfdab430399b1e12221da6a4cda5dd9",
+              asm: "3045022100d21fffc9343da1b2ec190c7084f8a69d201adcd88b880beb013fa4e0ab4158ad02205e0c362f844cc63539467b37d583128c7d2f7754864d08efe29cef98272688e2[ALL] 039c17e0e4ebd61c753fda99392658a692dbfdab430399b1e12221da6a4cda5dd9",
+              hex: "483045022100d21fffc9343da1b2ec190c7084f8a69d201adcd88b880beb013fa4e0ab4158ad02205e0c362f844cc63539467b37d583128c7d2f7754864d08efe29cef98272688e20121039c17e0e4ebd61c753fda99392658a692dbfdab430399b1e12221da6a4cda5dd9",
             },
             sequence: 4294967295,
           },
@@ -2013,8 +1963,7 @@ suite("RPCClient", () => {
             value: 0.53015771,
             n: 0,
             scriptPubKey: {
-              asm:
-                "OP_HASH160 5629021f7668d4ec310ac5e99701a6d6cf95eb8f OP_EQUAL",
+              asm: "OP_HASH160 5629021f7668d4ec310ac5e99701a6d6cf95eb8f OP_EQUAL",
               hex: "a9145629021f7668d4ec310ac5e99701a6d6cf95eb8f87",
               reqSigs: 1,
               type: "scripthash",
@@ -2022,8 +1971,7 @@ suite("RPCClient", () => {
             },
           },
         ],
-        hex:
-          "01000000018931eb4ccedd42474db1da12d1529724c3b3bf2195ec183e52f457c18adb5022010000006b483045022100d21fffc9343da1b2ec190c7084f8a69d201adcd88b880beb013fa4e0ab4158ad02205e0c362f844cc63539467b37d583128c7d2f7754864d08efe29cef98272688e20121039c17e0e4ebd61c753fda99392658a692dbfdab430399b1e12221da6a4cda5dd9ffffffff01dbf428030000000017a9145629021f7668d4ec310ac5e99701a6d6cf95eb8f8700000000",
+        hex: "01000000018931eb4ccedd42474db1da12d1529724c3b3bf2195ec183e52f457c18adb5022010000006b483045022100d21fffc9343da1b2ec190c7084f8a69d201adcd88b880beb013fa4e0ab4158ad02205e0c362f844cc63539467b37d583128c7d2f7754864d08efe29cef98272688e20121039c17e0e4ebd61c753fda99392658a692dbfdab430399b1e12221da6a4cda5dd9ffffffff01dbf428030000000017a9145629021f7668d4ec310ac5e99701a6d6cf95eb8f8700000000",
         blockhash:
           "00000000480351c0fc7047af37756bbae30996a018e94d9ca8156dccea032018",
         confirmations: 3204,
@@ -2090,8 +2038,7 @@ suite("RPCClient", () => {
         jsonrpc,
       };
       const result = {
-        hex:
-          "020000000001029a2b645e97cfde604d0b65aa174fb4747f8b99152f581d12d42055f3388c123e0000000000fdffffff9a2b645e97cfde604d0b65aa174fb4747f8b99152f581d12d42055f3388c123e0100000000fdffffff0180250000000000001600143d366a85a8c07a44b5eed0a622197d6784c07e69024730440220451546bae0bc61270eec966f1ca0a5cb16a93c5f88a800094240e61fb3f6fdd7022021a0065ec25e06f9e0b3a4d87b06d13adc2bd620dd8f2ecf7a40366ceaa93e998121039a3d49d8d6a2ca7ff2ea6657d3c8c19ba20ab67f529edb522030928b5f4894d20247304402201596d19c0eec785d301dad21ecc8bad1d808d4bd15615df1a5a1b9e930404066022038126c82743ccf5bc225b61a38ddd7ae651f12d27a730817de79279df8fd0ab88121028cc283639d0254c3f3091659d66f7681189de1ade326d36eefa50217956b057b00000000",
+        hex: "020000000001029a2b645e97cfde604d0b65aa174fb4747f8b99152f581d12d42055f3388c123e0000000000fdffffff9a2b645e97cfde604d0b65aa174fb4747f8b99152f581d12d42055f3388c123e0100000000fdffffff0180250000000000001600143d366a85a8c07a44b5eed0a622197d6784c07e69024730440220451546bae0bc61270eec966f1ca0a5cb16a93c5f88a800094240e61fb3f6fdd7022021a0065ec25e06f9e0b3a4d87b06d13adc2bd620dd8f2ecf7a40366ceaa93e998121039a3d49d8d6a2ca7ff2ea6657d3c8c19ba20ab67f529edb522030928b5f4894d20247304402201596d19c0eec785d301dad21ecc8bad1d808d4bd15615df1a5a1b9e930404066022038126c82743ccf5bc225b61a38ddd7ae651f12d27a730817de79279df8fd0ab88121028cc283639d0254c3f3091659d66f7681189de1ade326d36eefa50217956b057b00000000",
         complete: true,
       };
       nock(uri)
@@ -2112,8 +2059,7 @@ suite("RPCClient", () => {
       const request = { params, method: "testmempoolaccept", id, jsonrpc };
       const result = [
         {
-          txid:
-            "d1514757030c26d54e90b242c696f46f539bb55e92fb105505d9ee43e61657a9",
+          txid: "d1514757030c26d54e90b242c696f46f539bb55e92fb105505d9ee43e61657a9",
           allowed: true,
         },
       ];
@@ -2355,8 +2301,7 @@ suite("RPCClient", () => {
       const params = { txid, options };
       const request = { params, method: "bumpfee", id, jsonrpc };
       const result = {
-        txid:
-          "e540d4c27e148c193979dc5bb7e86110f818311a51223e6ba5f5d9e8daaf5e3d",
+        txid: "e540d4c27e148c193979dc5bb7e86110f818311a51223e6ba5f5d9e8daaf5e3d",
         origfee: 0.00000144,
         fee: 0.00000839,
         errors: [],
@@ -2457,8 +2402,7 @@ suite("RPCClient", () => {
         scriptPubKey: "00146c28062b4ad15fc642fa711617f4073648a2c93c",
         ismine: true,
         solvable: true,
-        desc:
-          "wpkh([2f8f8c1b/0'/0'/25']028f8e5afd6c3dd82e7fa75cd6558c35cc56d3c1403e6659a3ddec71cac6382a7d)#xgmuj4mj",
+        desc: "wpkh([2f8f8c1b/0'/0'/25']028f8e5afd6c3dd82e7fa75cd6558c35cc56d3c1403e6659a3ddec71cac6382a7d)#xgmuj4mj",
         iswatchonly: false,
         isscript: false,
         iswitness: true,
@@ -2586,15 +2530,13 @@ suite("RPCClient", () => {
           "0000000000000165757641aa760f436f367abc72e40bcaa8e598cc44992db8f9",
         blockindex: 54,
         blocktime: 1572280467,
-        txid:
-          "2c06449191f86594ceb059363da55e6587963fc8d801fdecf73f9a42d64dfe95",
+        txid: "2c06449191f86594ceb059363da55e6587963fc8d801fdecf73f9a42d64dfe95",
         walletconflicts: [],
         time: 1572280467,
         timereceived: 1572281743,
         "bip125-replaceable": "no",
         details: [],
-        hex:
-          "02000000000101a95716e643eed9055510fb925eb59b536ff496c642b2904ed5260c03574751d10000000000feffffff02a086010000000000160014aacf5a9d6c52c5ffe8006182a72486baf2e8bf3333fb390000000000160014e87724699668d3abff7311cb18a62b0c8de1038502473044022026a9618c21c3eab177877c6f8f8890610ad0ac93b8e243c4ea32dadf52728dae02206817f8aaa7fabf728853415bdae7b4e2fc02fc72630cba23952224fad374bcc3012102a00a9973ab15acaac69b591dcebed3fcf44ab76950d962671391fd1c1c3f0015742c1800",
+        hex: "02000000000101a95716e643eed9055510fb925eb59b536ff496c642b2904ed5260c03574751d10000000000feffffff02a086010000000000160014aacf5a9d6c52c5ffe8006182a72486baf2e8bf3333fb390000000000160014e87724699668d3abff7311cb18a62b0c8de1038502473044022026a9618c21c3eab177877c6f8f8890610ad0ac93b8e243c4ea32dadf52728dae02206817f8aaa7fabf728853415bdae7b4e2fc02fc72630cba23952224fad374bcc3012102a00a9973ab15acaac69b591dcebed3fcf44ab76950d962671391fd1c1c3f0015742c1800",
       };
       nock(uri)
         .post("/wallet/" + wallet, request)
@@ -2669,8 +2611,7 @@ suite("RPCClient", () => {
       const range: [number, number] = [2, 5];
       const requests = [
         {
-          desc:
-            "wpkh(tpubD6NzVbkrYhZ4Wk5MMULiQd4XkBe3KeG6GCUNrWcXu27PJwqFfHF7geuTPfPZcViUpV7ny6MHVnbvxdCSfkooFb7bBJiQgKXCVM58XZiVyHu/0/*)#9tk43hcd",
+          desc: "wpkh(tpubD6NzVbkrYhZ4Wk5MMULiQd4XkBe3KeG6GCUNrWcXu27PJwqFfHF7geuTPfPZcViUpV7ny6MHVnbvxdCSfkooFb7bBJiQgKXCVM58XZiVyHu/0/*)#9tk43hcd",
           range,
           internal: true,
           watchonly: true,
@@ -2818,13 +2759,11 @@ suite("RPCClient", () => {
       const request = { params: {}, method: "listlockunspent", id, jsonrpc };
       const result = [
         {
-          txid:
-            "3e128c38f35520d4121d582f15998b7f74b44f17aa650b4d60decf975e642b9a",
+          txid: "3e128c38f35520d4121d582f15998b7f74b44f17aa650b4d60decf975e642b9a",
           vout: 0,
         },
         {
-          txid:
-            "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
+          txid: "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
           vout: 1,
         },
       ];
@@ -2921,8 +2860,7 @@ suite("RPCClient", () => {
               "0000000000006b542e808cfbbb3bcfb32ae1ca2e44c79bbca2a5e68bcae1fbfd",
             blockindex: 64,
             blocktime: 1572357316,
-            txid:
-              "e540d4c27e148c193979dc5bb7e86110f818311a51223e6ba5f5d9e8daaf5e3d",
+            txid: "e540d4c27e148c193979dc5bb7e86110f818311a51223e6ba5f5d9e8daaf5e3d",
             walletconflicts: [
               "92dee32122b5f270c2c28eb4bdccd767f897b613ee51157bfcc4b53c5106acf1",
             ],
@@ -2945,8 +2883,7 @@ suite("RPCClient", () => {
               "000000000021e0f4b5e16a972fc29cc75b046c18af7c90491056810e55e5dd25",
             blockindex: 215,
             blocktime: 1572361706,
-            txid:
-              "237859c44d45b8d6631883064542d697958cc17a023459967bd1308b81246b45",
+            txid: "237859c44d45b8d6631883064542d697958cc17a023459967bd1308b81246b45",
             walletconflicts: [],
             time: 1572360790,
             timereceived: 1572360790,
@@ -2964,8 +2901,7 @@ suite("RPCClient", () => {
               "000000000021e0f4b5e16a972fc29cc75b046c18af7c90491056810e55e5dd25",
             blockindex: 215,
             blocktime: 1572361706,
-            txid:
-              "237859c44d45b8d6631883064542d697958cc17a023459967bd1308b81246b45",
+            txid: "237859c44d45b8d6631883064542d697958cc17a023459967bd1308b81246b45",
             walletconflicts: [],
             time: 1572360790,
             timereceived: 1572360790,
@@ -2983,8 +2919,7 @@ suite("RPCClient", () => {
               "00000000000000559e344c0cacef0caf7b2a93d0bc0546285dcacd86d6d13e89",
             blockindex: 45,
             blocktime: 1572356089,
-            txid:
-              "2be2abd68218bbd0595f7a88fe11dc84d57942a5d888bd6223f95cf992adde75",
+            txid: "2be2abd68218bbd0595f7a88fe11dc84d57942a5d888bd6223f95cf992adde75",
             walletconflicts: [],
             time: 1572355952,
             timereceived: 1572355952,
@@ -3000,8 +2935,7 @@ suite("RPCClient", () => {
             fee: -0.00000144,
             confirmations: -80,
             trusted: false,
-            txid:
-              "92dee32122b5f270c2c28eb4bdccd767f897b613ee51157bfcc4b53c5106acf1",
+            txid: "92dee32122b5f270c2c28eb4bdccd767f897b613ee51157bfcc4b53c5106acf1",
             walletconflicts: [
               "e540d4c27e148c193979dc5bb7e86110f818311a51223e6ba5f5d9e8daaf5e3d",
             ],
@@ -3045,8 +2979,7 @@ suite("RPCClient", () => {
             "0000000000102f5b67e1b946d40354ddd93060db3220b5fda7e4aad013738e6b",
           blockindex: 137,
           blocktime: 1572031381,
-          txid:
-            "d1514757030c26d54e90b242c696f46f539bb55e92fb105505d9ee43e61657a9",
+          txid: "d1514757030c26d54e90b242c696f46f539bb55e92fb105505d9ee43e61657a9",
           walletconflicts: [],
           time: 1572030277,
           timereceived: 1572030277,
@@ -3065,8 +2998,7 @@ suite("RPCClient", () => {
             "00000000000000559e344c0cacef0caf7b2a93d0bc0546285dcacd86d6d13e89",
           blockindex: 45,
           blocktime: 1572356089,
-          txid:
-            "2be2abd68218bbd0595f7a88fe11dc84d57942a5d888bd6223f95cf992adde75",
+          txid: "2be2abd68218bbd0595f7a88fe11dc84d57942a5d888bd6223f95cf992adde75",
           walletconflicts: [],
           time: 1572355952,
           timereceived: 1572355952,
@@ -3107,8 +3039,7 @@ suite("RPCClient", () => {
       const request = { params, method: "listunspent", id, jsonrpc };
       const result = [
         {
-          txid:
-            "96b611869f716cd4b53ce2f9706a595885a86573ec2b6408ce41711578584529",
+          txid: "96b611869f716cd4b53ce2f9706a595885a86573ec2b6408ce41711578584529",
           vout: 0,
           address:
             "tb1qg9nfs5ll5h3xl3h8xqhw8wg4sj6j6g6666cstmeg7v2q4ty0ccsqg5du3n",
@@ -3121,13 +3052,11 @@ suite("RPCClient", () => {
           confirmations: 422,
           spendable: true,
           solvable: true,
-          desc:
-            "wsh(multi(2,[2f8f8c1b/0'/0'/11']026544d2de6d868276cdfb8d2cdd020119162440fe98eac1add12fa354e7fef838,[2f8f8c1b/0'/0'/10']024a8638218164e64ac6ef560ebc18356a8773697aaeea37bc2c5707cca598b8c7))#v4j2pdsn",
+          desc: "wsh(multi(2,[2f8f8c1b/0'/0'/11']026544d2de6d868276cdfb8d2cdd020119162440fe98eac1add12fa354e7fef838,[2f8f8c1b/0'/0'/10']024a8638218164e64ac6ef560ebc18356a8773697aaeea37bc2c5707cca598b8c7))#v4j2pdsn",
           safe: true,
         },
         {
-          txid:
-            "ff758ffd73729be8afae0d683547f7840bdaee75ad5e5c464fb621b2509c366b",
+          txid: "ff758ffd73729be8afae0d683547f7840bdaee75ad5e5c464fb621b2509c366b",
           vout: 0,
           address: "tb1q8vd7hh77afe2aans7vywyt8txvz84r3pwkmny4",
           scriptPubKey: "00143b1bebdfdeea72aef670f308e22ceb33047a8e21",
@@ -3135,8 +3064,7 @@ suite("RPCClient", () => {
           confirmations: 615,
           spendable: true,
           solvable: true,
-          desc:
-            "wpkh([2f8f8c1b/0'/1'/0']023efde40c10ded46eeb2ccbe4ece98ccffc9921e6e2cbb82f21965b5563dc59a3)#vc3pfv5a",
+          desc: "wpkh([2f8f8c1b/0'/1'/0']023efde40c10ded46eeb2ccbe4ece98ccffc9921e6e2cbb82f21965b5563dc59a3)#vc3pfv5a",
           safe: true,
         },
       ];
@@ -3193,13 +3121,11 @@ suite("RPCClient", () => {
       const unlock = false;
       const transactions = [
         {
-          txid:
-            "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
+          txid: "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
           vout: 1,
         },
         {
-          txid:
-            "3e128c38f35520d4121d582f15998b7f74b44f17aa650b4d60decf975e642b9a",
+          txid: "3e128c38f35520d4121d582f15998b7f74b44f17aa650b4d60decf975e642b9a",
           vout: 0,
         },
       ];
@@ -3386,8 +3312,7 @@ suite("RPCClient", () => {
         "02000000011e6de9ecf189d7101655489338d8b6437366a2694f3536080507143b06073c7a0000000000fdffffff0118a66900000000001600141b5eaac3aca51241ffa5a10cfd85b38c0035e7b100000000";
       const prevtxs = [
         {
-          txid:
-            "7a3c07063b1407050836354f69a2667343b6d8389348551610d789f1ece96d1e",
+          txid: "7a3c07063b1407050836354f69a2667343b6d8389348551610d789f1ece96d1e",
           vout: 0,
           scriptPubKey: "0014c92776d7c9e5c7d74f9c8093335de1928862e8ac",
           amount: 0.06924013,
@@ -3402,8 +3327,7 @@ suite("RPCClient", () => {
         jsonrpc,
       };
       const result = {
-        hex:
-          "020000000001011e6de9ecf189d7101655489338d8b6437366a2694f3536080507143b06073c7a0000000000fdffffff0118a66900000000001600141b5eaac3aca51241ffa5a10cfd85b38c0035e7b102473044022035b072acf1e166e9d20999adbd40fd4fe6d76947cc395b1450e96a5e5c3d677602203622d8827e5c4396bbdd390fd29d7a93992273e5028a4c8a76329af45496848d812103bcde895db85d99e39b1eb4689671798c689435b6e131891aad026aed31f4a8f700000000",
+        hex: "020000000001011e6de9ecf189d7101655489338d8b6437366a2694f3536080507143b06073c7a0000000000fdffffff0118a66900000000001600141b5eaac3aca51241ffa5a10cfd85b38c0035e7b102473044022035b072acf1e166e9d20999adbd40fd4fe6d76947cc395b1450e96a5e5c3d677602203622d8827e5c4396bbdd390fd29d7a93992273e5028a4c8a76329af45496848d812103bcde895db85d99e39b1eb4689671798c689435b6e131891aad026aed31f4a8f700000000",
         complete: true,
       };
       nock(uri)
@@ -3457,8 +3381,7 @@ suite("RPCClient", () => {
     test(".walletcreatefundedpsbt()", async () => {
       const inputs = [
         {
-          txid:
-            "5396f889b7118fc57f4bfb3397e12399d7f2b8ccd7f5a66bd33792f6ebe399e3",
+          txid: "5396f889b7118fc57f4bfb3397e12399d7f2b8ccd7f5a66bd33792f6ebe399e3",
           vout: 0,
         },
       ];
@@ -3489,8 +3412,7 @@ suite("RPCClient", () => {
       };
       const request = { params, method: "walletcreatefundedpsbt", id, jsonrpc };
       const result = {
-        psbt:
-          "cHNidP8BAFICAAAAAeOZ4+v2kjfTa6b118y48teZI+GXM/tLf8WPEbeJ+JZTAAAAAAD9////Aag8AgAAAAAAFgAU56QbofbdNj/6xjrMSJuWIVfws2YBAAAAAAEA4QEAAAAB7KfSdMCo0aVk+cIkbmlgddOFp+1riB5jCVwBZ0Cgaq4BAAAAakcwRAIgAeAUrBBpoUPgr8A4ysywkv0B8WdgsxfNhAvFpbw/Ki0CIE8GFYALdKLWw2jdwVfLiMFFsy024Toj7Po0/ds/35XCASEDr3vX6YlRh/pfO+KjhQRMg9cfwiFHITID8mKFdFu1gBv/////Asw9AgAAAAAAGXapFIujKvHonUGL+2VSyu2XWvBQ7l63iKxfx5AAAAAAABl2qRQYJu+2OZ47eXi0rxco8eAHp2y2PoisAAAAACIGA7sa3R4eYJPKpZ8Sf/PUd/isIQ8sofjIH/jBYC2aW6zQEPnXKHwAAACAAAAAgAIAAIAAIgIC6aO2I6xv+jeXEqj2kFvHlIt21Rso0GDglJsE2UOs36wQJaaBjQAAAIAAAACABQAAgAA=",
+        psbt: "cHNidP8BAFICAAAAAeOZ4+v2kjfTa6b118y48teZI+GXM/tLf8WPEbeJ+JZTAAAAAAD9////Aag8AgAAAAAAFgAU56QbofbdNj/6xjrMSJuWIVfws2YBAAAAAAEA4QEAAAAB7KfSdMCo0aVk+cIkbmlgddOFp+1riB5jCVwBZ0Cgaq4BAAAAakcwRAIgAeAUrBBpoUPgr8A4ysywkv0B8WdgsxfNhAvFpbw/Ki0CIE8GFYALdKLWw2jdwVfLiMFFsy024Toj7Po0/ds/35XCASEDr3vX6YlRh/pfO+KjhQRMg9cfwiFHITID8mKFdFu1gBv/////Asw9AgAAAAAAGXapFIujKvHonUGL+2VSyu2XWvBQ7l63iKxfx5AAAAAAABl2qRQYJu+2OZ47eXi0rxco8eAHp2y2PoisAAAAACIGA7sa3R4eYJPKpZ8Sf/PUd/isIQ8sofjIH/jBYC2aW6zQEPnXKHwAAACAAAAAgAIAAIAAIgIC6aO2I6xv+jeXEqj2kFvHlIt21Rso0GDglJsE2UOs36wQJaaBjQAAAIAAAACABQAAgAA=",
         fee: 0.00000292,
         changepos: -1,
       };
@@ -3554,8 +3476,7 @@ suite("RPCClient", () => {
       const params = { psbt, sign, sighashtype, bip32derivs };
       const request = { params, method: "walletprocesspsbt", id, jsonrpc };
       const result = {
-        psbt:
-          "cHNidP8BAFICAAAAAesycXqP/ZnHQ42fCokY4ws3HyKokiDXfsosfWt2t83wAAAAAAD9////ASBFQAAAAAAAFgAUYN55MzrCRphAffpgyBh5daiXrAcBAAAAAAEBH1NHQAAAAAAAFgAUpOVc1oxzfkX57QvwzkDs8f75ppsBCGsCRzBEAiBCMoeFpGtSbsUWbGubHEmIvyDmKr9KHTB1nbuI9HgIsgIgLj4HuddO7hZ9F7FiqzGo+vLXkY0G2+3VGwgO5qp+LMCBIQKeXII7c4+9Decuri9xUBRtIRde/fOL2WLc6UnN9/qomwAiAgM4FaCpxCh+XmYDxo7+zZXN1BaI1l+HBJzFUnQBUFWfWhCl/jeMAAAAgAAAAIACAACAAA==",
+        psbt: "cHNidP8BAFICAAAAAesycXqP/ZnHQ42fCokY4ws3HyKokiDXfsosfWt2t83wAAAAAAD9////ASBFQAAAAAAAFgAUYN55MzrCRphAffpgyBh5daiXrAcBAAAAAAEBH1NHQAAAAAAAFgAUpOVc1oxzfkX57QvwzkDs8f75ppsBCGsCRzBEAiBCMoeFpGtSbsUWbGubHEmIvyDmKr9KHTB1nbuI9HgIsgIgLj4HuddO7hZ9F7FiqzGo+vLXkY0G2+3VGwgO5qp+LMCBIQKeXII7c4+9Decuri9xUBRtIRde/fOL2WLc6UnN9/qomwAiAgM4FaCpxCh+XmYDxo7+zZXN1BaI1l+HBJzFUnQBUFWfWhCl/jeMAAAAgAAAAIACAACAAA==",
         complete: true,
       };
       nock(uri)

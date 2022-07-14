@@ -204,8 +204,7 @@ const action = "start";
 const scanobjects = [
   "addr(mxosQ4CvQR8ipfWdRktyB3u16tauEdamGc)",
   {
-    desc:
-      "wpkh([d34db33f/84'/0'/0']tpubD6NzVbkrYhZ4YTN7usjEzYmfu4JKqnfp9RCbDmdKH78vTyuwgQat8vRw5cX1YaZZvFfQrkHrM2XsyfA8cZE1thA3guTBfTkKqbhCDpcKFLG/0/*)#8gfuh6ex",
+    desc: "wpkh([d34db33f/84'/0'/0']tpubD6NzVbkrYhZ4YTN7usjEzYmfu4JKqnfp9RCbDmdKH78vTyuwgQat8vRw5cX1YaZZvFfQrkHrM2XsyfA8cZE1thA3guTBfTkKqbhCDpcKFLG/0/*)#8gfuh6ex",
     range: [1, 3],
   },
 ];
@@ -924,8 +923,7 @@ const result = await client.importaddress(
 const wallet = "bitcoin-core-wallet.dat";
 const requests = [
   {
-    desc:
-      "wpkh(tpubD6NzVbkrYhZ4Wk5MMULiQd4XkBe3KeG6GCUNrWcXu27PJwqFfHF7geuTPfPZcViUpV7ny6MHVnbvxdCSfkooFb7bBJiQgKXCVM58XZiVyHu/0/*)#9tk43hcd",
+    desc: "wpkh(tpubD6NzVbkrYhZ4Wk5MMULiQd4XkBe3KeG6GCUNrWcXu27PJwqFfHF7geuTPfPZcViUpV7ny6MHVnbvxdCSfkooFb7bBJiQgKXCVM58XZiVyHu/0/*)#9tk43hcd",
     range: [2, 5],
     internal: true,
     watchonly: true,
