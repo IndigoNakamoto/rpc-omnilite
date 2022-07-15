@@ -2009,8 +2009,8 @@ export class RPCClient extends RESTClient {
   /**
    * @description Returns information about granted and revoked units of managed tokens.
    */
-  omni_getgrants() {
-    return this.rpc("omni_getgrants");
+  omni_getgrants(params: PropertyId) {
+    return this.rpc("omni_getgrants", params);
   }
 
   /**
