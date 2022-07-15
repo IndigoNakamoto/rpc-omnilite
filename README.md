@@ -26,9 +26,9 @@ const client = new RPCClient({ url, port, timeout, user, pass });
 
 ```javascript
 const response = await client.batch([
-	{ method: "getbestblockhash", id: 1 },
-	{ method: "help", params: { command: "help" }, id: "custom-id" },
-	{ method: "getzmqnotifications", params: {}, id: 2 },
+  { method: "getbestblockhash", id: 1 },
+  { method: "help", params: { command: "help" }, id: "custom-id" },
+  { method: "getzmqnotifications", params: {}, id: 2 },
 ]);
 ```
 
@@ -38,10 +38,10 @@ const response = await client.batch([
 
 ```javascript
 const hash = await client.omni_send({
-	fromaddress: "3M9qvHKtgARhqcMtM5cRT9VaiDJ5PSfQGY",
-	toaddress: "37FaKponF7zqoMLUjEiko25pDiuVH5YLEa",
-	propertyid: 321,
-	amount: "100.0",
+  fromaddress: "3M9qvHKtgARhqcMtM5cRT9VaiDJ5PSfQGY",
+  toaddress: "37FaKponF7zqoMLUjEiko25pDiuVH5YLEa",
+  propertyid: 321,
+  amount: "100.0",
 });
 ```
 
@@ -49,12 +49,12 @@ const hash = await client.omni_send({
 
 ```javascript
 const hash = await client.omni_sendnewdexorder({
-	fromaddress: "3M9qvHKtgARhqcMtM5cRT9VaiDJ5PSfQGY",
-	propertyidforsale: 1,
-	amountforsale: "1.5",
-	amountdesired: "0.75",
-	paymentwindow: 50,
-	minacceptfee: "0.0001",
+  fromaddress: "3M9qvHKtgARhqcMtM5cRT9VaiDJ5PSfQGY",
+  propertyidforsale: 1,
+  amountforsale: "1.5",
+  amountdesired: "0.75",
+  paymentwindow: 50,
+  minacceptfee: "0.0001",
 });
 ```
 
@@ -62,8 +62,8 @@ const hash = await client.omni_sendnewdexorder({
 
 ```javascript
 const hash = await client.omni_sendcanceldexorder({
-	fromaddress: "3M9qvHKtgARhqcMtM5cRT9VaiDJ5PSfQGY",
-	propertyidforsale: 1,
+  fromaddress: "3M9qvHKtgARhqcMtM5cRT9VaiDJ5PSfQGY",
+  propertyidforsale: 1,
 });
 ```
 
@@ -71,11 +71,11 @@ const hash = await client.omni_sendcanceldexorder({
 
 ```javascript
 const hash = await client.omni_senddexaccept({
-	fromaddress: "3M9qvHKtgARhqcMtM5cRT9VaiDJ5PSfQGY",
-	toaddress: "37FaKponF7zqoMLUjEiko25pDiuVH5YLEa",
-	propertyid: 1,
-	amount: "15.0",
-	override: false,
+  fromaddress: "3M9qvHKtgARhqcMtM5cRT9VaiDJ5PSfQGY",
+  toaddress: "37FaKponF7zqoMLUjEiko25pDiuVH5YLEa",
+  propertyid: 1,
+  amount: "15.0",
+  override: false,
 });
 ```
 
@@ -95,7 +95,7 @@ const hex = await client.omni_getallbalancesforid({ propertyid: 321 });
 
 ```javascript
 const balance = await client.omni_getallbalancesforaddress({
-	address: "LTceXoduS2cetpWJSe47M25i5oKjEccN1h",
+  address: "LTceXoduS2cetpWJSe47M25i5oKjEccN1h",
 });
 ```
 
@@ -111,7 +111,7 @@ const hash = await client.getbestblockhash();
 
 ```javascript
 const blockhash =
-	"000000004182034f427d463b92162d35d0accef9ea0c5354a87e870ca1815b4c";
+  "000000004182034f427d463b92162d35d0accef9ea0c5354a87e870ca1815b4c";
 const verbosity = 2;
 const block = await client.getblock({ blockhash, verbosity });
 ```
@@ -132,7 +132,7 @@ const count = await client.getblockcount();
 
 ```javascript
 const blockhash =
-	"00000000000000dfffa1954693ba3f79813909dbcdedfe05eccb9829e828c141";
+  "00000000000000dfffa1954693ba3f79813909dbcdedfe05eccb9829e828c141";
 const filtertype = "basic";
 const result = await client.getblockfilter({ blockhash, filtertype });
 ```
@@ -148,7 +148,7 @@ const hash = await client.getblockhash({ height });
 
 ```javascript
 const blockhash =
-	"000000004182034f427d463b92162d35d0accef9ea0c5354a87e870ca1815b4c";
+  "000000004182034f427d463b92162d35d0accef9ea0c5354a87e870ca1815b4c";
 const verbose = false;
 const header = await client.getblockheader({ blockhash, verbose });
 ```
@@ -157,7 +157,7 @@ const header = await client.getblockheader({ blockhash, verbose });
 
 ```javascript
 const hash_or_height =
-	"000000004182034f427d463b92162d35d0accef9ea0c5354a87e870ca1815b4c";
+  "000000004182034f427d463b92162d35d0accef9ea0c5354a87e870ca1815b4c";
 const stats = ["txs", "time"];
 const info = await client.getblockstats({ hash_or_height, stats });
 ```
@@ -173,7 +173,7 @@ const tips = await client.getchaintips();
 ```javascript
 const nblocks = 2016;
 const blockhash =
-	"000000004182034f427d463b92162d35d0accef9ea0c5354a87e870ca1815b4c";
+  "000000004182034f427d463b92162d35d0accef9ea0c5354a87e870ca1815b4c";
 const result = await client.getchaintxstats({ nblocks, blockhash });
 ```
 
@@ -232,10 +232,10 @@ const result = await client.gettxout({ txid, n, include_mempool });
 
 ```javascript
 const txids = [
-	"42e75d074cf5b836170d20fc09593245c65a3f07283a497c3350c4d109b38bb6",
+  "42e75d074cf5b836170d20fc09593245c65a3f07283a497c3350c4d109b38bb6",
 ];
 const blockhash =
-	"000000000000000000055bc30b762904ab996430603cafe846cc6adc82c4af1e";
+  "000000000000000000055bc30b762904ab996430603cafe846cc6adc82c4af1e";
 const result = await client.gettxoutproof({ txids, blockhash });
 ```
 
@@ -249,7 +249,7 @@ const info = await client.gettxoutsetinfo();
 
 ```javascript
 const blockhash =
-	"00000000000000261a35cf378bf8fa1bf6ac87800d798ce2a11f581f562e92ba";
+  "00000000000000261a35cf378bf8fa1bf6ac87800d798ce2a11f581f562e92ba";
 const result = await client.preciousblock({ blockhash });
 ```
 
@@ -271,11 +271,11 @@ const result = await client.savemempool();
 ```javascript
 const action = "start";
 const scanobjects = [
-	"addr(mxosQ4CvQR8ipfWdRktyB3u16tauEdamGc)",
-	{
-		desc: "wpkh([d34db33f/84'/0'/0']tpubD6NzVbkrYhZ4YTN7usjEzYmfu4JKqnfp9RCbDmdKH78vTyuwgQat8vRw5cX1YaZZvFfQrkHrM2XsyfA8cZE1thA3guTBfTkKqbhCDpcKFLG/0/*)#8gfuh6ex",
-		range: [1, 3],
-	},
+  "addr(mxosQ4CvQR8ipfWdRktyB3u16tauEdamGc)",
+  {
+    desc: "wpkh([d34db33f/84'/0'/0']tpubD6NzVbkrYhZ4YTN7usjEzYmfu4JKqnfp9RCbDmdKH78vTyuwgQat8vRw5cX1YaZZvFfQrkHrM2XsyfA8cZE1thA3guTBfTkKqbhCDpcKFLG/0/*)#8gfuh6ex",
+    range: [1, 3],
+  },
 ];
 const result = await client.scantxoutset({ action, scanobjects });
 ```
@@ -292,7 +292,7 @@ const result = await client.verifychain({ checklevel, nblocks });
 
 ```javascript
 const proof =
-	"00000020ed07b12f0398e45fd403db11dbe894dc3301ce1a7725424e0b5e460c0000000066fca14db436f305aea37b3ae0f8b188cbf112dff3854c3d419f3ff3ebbc821f6c0c975dffff001d8fd5a7d2eb00000009e7acd3f605d1b957d684d9eeca9c472d803d90c0d17e29e5606f9b080b177a4abcd854622ad3900b5bc1ae71e99699a05eb972d46bd439c08eb7fbd20bba6494542222b2d1388f52c6d23ac12b32245ca47b02fc2f0a283a88aabca1f4db43ca8a4da8ffd7d9ae403b0c34ccbf14d2318c34fabb713c48f6d6490c6095250b6f08f26f020275d448dfb9967c62bedefaf29260021671a191f620f7783252788549b1e033dc815e2cd36ff204b398046f834643859f881a4d93b3fc5b91413a009c5069be274e1dcc675183ea2a989ef598422c0ed02e407aade8eaa6ef7ec1120ca4ffdef21b5fd26c4525a27c78cc38026b257f9d23f0d796603b1d3cbf539bdf87ccf9e81954f58e072d67eff2891339f203cbdec68bbbabbbbc0c070cceea03bf0a00";
+  "00000020ed07b12f0398e45fd403db11dbe894dc3301ce1a7725424e0b5e460c0000000066fca14db436f305aea37b3ae0f8b188cbf112dff3854c3d419f3ff3ebbc821f6c0c975dffff001d8fd5a7d2eb00000009e7acd3f605d1b957d684d9eeca9c472d803d90c0d17e29e5606f9b080b177a4abcd854622ad3900b5bc1ae71e99699a05eb972d46bd439c08eb7fbd20bba6494542222b2d1388f52c6d23ac12b32245ca47b02fc2f0a283a88aabca1f4db43ca8a4da8ffd7d9ae403b0c34ccbf14d2318c34fabb713c48f6d6490c6095250b6f08f26f020275d448dfb9967c62bedefaf29260021671a191f620f7783252788549b1e033dc815e2cd36ff204b398046f834643859f881a4d93b3fc5b91413a009c5069be274e1dcc675183ea2a989ef598422c0ed02e407aade8eaa6ef7ec1120ca4ffdef21b5fd26c4525a27c78cc38026b257f9d23f0d796603b1d3cbf539bdf87ccf9e81954f58e072d67eff2891339f203cbdec68bbbabbbbc0c070cceea03bf0a00";
 const result = await client.verifytxoutproof({ proof });
 ```
 
@@ -348,8 +348,8 @@ const maxtries = 10000;
 const address = "1HLoD9E4SDFFPDiYfNYnkBLQ85Y51J3Zb1";
 const wallet = "bitcoin-core-wallet.dat";
 const result = await client.generatetoaddress(
-	{ nblocks, address, maxtries },
-	wallet
+  { nblocks, address, maxtries },
+  wallet
 );
 ```
 
@@ -500,7 +500,7 @@ const result = await client.setnetworkactive({ state });
 
 ```javascript
 const psbt =
-	"cHNidP8BAJoCAAAAAtVSFGEYzcJX2qwhy8iJGI1Y/zeIqBQtH/OBC9WJ4mx7AQAAAAD9////azacULIhtk9GXF6tde7aC4T3RzVoDa6v6Jtyc/2Pdf8AAAAAAP3///8C2EcDAAAAAAAWABRvcJGDvHZHgYiyMl8u5pLowEPLj6CGAQAAAAAAFgAUtxN9/tGP/jlvvgsWeGCM691FsesBAAAAAAAAAAA=";
+  "cHNidP8BAJoCAAAAAtVSFGEYzcJX2qwhy8iJGI1Y/zeIqBQtH/OBC9WJ4mx7AQAAAAD9////azacULIhtk9GXF6tde7aC4T3RzVoDa6v6Jtyc/2Pdf8AAAAAAP3///8C2EcDAAAAAAAWABRvcJGDvHZHgYiyMl8u5pLowEPLj6CGAQAAAAAAFgAUtxN9/tGP/jlvvgsWeGCM691FsesBAAAAAAAAAAA=";
 const result = await client.analyzepsbt({ psbt });
 ```
 
@@ -508,8 +508,8 @@ const result = await client.analyzepsbt({ psbt });
 
 ```javascript
 const txs = [
-	"cHNidP8BAHsCAAAAAn+RFbuIDPiBkN5ua0vnUVZwwvbnnDZ8Ca4Z6y3vQyqnAAAAAAD9////KUVYeBVxQc4IZCvsc2WohVhZanD54jy11Gxxn4YRtpYBAAAAAP3///8BYII7AAAAAAAWABSANbyZwTJ0B7qPqpWSolEEKYbIFQEAAAAAAQEfIAMAAAAAAAAWABRCHnul3Lf2vUn4GUU9mrnGLnTHsQEIawJHMEQCIAenBxHwiJAo9Mt/0B0gsflruKfe90W0OUaW/gMqT13hAiBrcsvglEZvxDWKKhMLArU52ndMb6cAangC/u6mowwjGAEhAoNFASSjynZOTTIf6bOnANXURu5zQ9eGpUAcB1x569/qAAAA",
-	"cHNidP8BAHsCAAAAAn+RFbuIDPiBkN5ua0vnUVZwwvbnnDZ8Ca4Z6y3vQyqnAAAAAAD9////KUVYeBVxQc4IZCvsc2WohVhZanD54jy11Gxxn4YRtpYBAAAAAP3///8BYII7AAAAAAAWABSANbyZwTJ0B7qPqpWSolEEKYbIFQEAAAAAAQEfIAMAAAAAAAAWABRCHnul3Lf2vUn4GUU9mrnGLnTHsQABAR/HgTsAAAAAABYAFDNBVvuJV65T//o2rr6AhKSwDPt9AQhrAkcwRAIgWyFL8FdWh0kB8CbKL2GsVPQU2Wgb9E4YvOwJ9KLseMgCIHBdaP/zuYg7Y4cL5B+gjsOUB4PFss6+dnACpn/+U9UjASEDTi3KTyZW9vKWtxYxflo5B7l1PHSqn0GUlf8AsXkGfvQAAA==",
+  "cHNidP8BAHsCAAAAAn+RFbuIDPiBkN5ua0vnUVZwwvbnnDZ8Ca4Z6y3vQyqnAAAAAAD9////KUVYeBVxQc4IZCvsc2WohVhZanD54jy11Gxxn4YRtpYBAAAAAP3///8BYII7AAAAAAAWABSANbyZwTJ0B7qPqpWSolEEKYbIFQEAAAAAAQEfIAMAAAAAAAAWABRCHnul3Lf2vUn4GUU9mrnGLnTHsQEIawJHMEQCIAenBxHwiJAo9Mt/0B0gsflruKfe90W0OUaW/gMqT13hAiBrcsvglEZvxDWKKhMLArU52ndMb6cAangC/u6mowwjGAEhAoNFASSjynZOTTIf6bOnANXURu5zQ9eGpUAcB1x569/qAAAA",
+  "cHNidP8BAHsCAAAAAn+RFbuIDPiBkN5ua0vnUVZwwvbnnDZ8Ca4Z6y3vQyqnAAAAAAD9////KUVYeBVxQc4IZCvsc2WohVhZanD54jy11Gxxn4YRtpYBAAAAAP3///8BYII7AAAAAAAWABSANbyZwTJ0B7qPqpWSolEEKYbIFQEAAAAAAQEfIAMAAAAAAAAWABRCHnul3Lf2vUn4GUU9mrnGLnTHsQABAR/HgTsAAAAAABYAFDNBVvuJV65T//o2rr6AhKSwDPt9AQhrAkcwRAIgWyFL8FdWh0kB8CbKL2GsVPQU2Wgb9E4YvOwJ9KLseMgCIHBdaP/zuYg7Y4cL5B+gjsOUB4PFss6+dnACpn/+U9UjASEDTi3KTyZW9vKWtxYxflo5B7l1PHSqn0GUlf8AsXkGfvQAAA==",
 ];
 const result = await client.combinepsbt({ txs });
 ```
@@ -518,8 +518,8 @@ const result = await client.combinepsbt({ txs });
 
 ```javascript
 const txs = [
-	"020000000001029a2b645e97cfde604d0b65aa174fb4747f8b99152f581d12d42055f3388c123e0000000000fdffffff9a2b645e97cfde604d0b65aa174fb4747f8b99152f581d12d42055f3388c123e0100000000fdffffff0180250000000000001600143d366a85a8c07a44b5eed0a622197d6784c07e69000247304402201596d19c0eec785d301dad21ecc8bad1d808d4bd15615df1a5a1b9e930404066022038126c82743ccf5bc225b61a38ddd7ae651f12d27a730817de79279df8fd0ab88121028cc283639d0254c3f3091659d66f7681189de1ade326d36eefa50217956b057b00000000",
-	"020000000001029a2b645e97cfde604d0b65aa174fb4747f8b99152f581d12d42055f3388c123e0000000000fdffffff9a2b645e97cfde604d0b65aa174fb4747f8b99152f581d12d42055f3388c123e0100000000fdffffff0180250000000000001600143d366a85a8c07a44b5eed0a622197d6784c07e69024730440220451546bae0bc61270eec966f1ca0a5cb16a93c5f88a800094240e61fb3f6fdd7022021a0065ec25e06f9e0b3a4d87b06d13adc2bd620dd8f2ecf7a40366ceaa93e998121039a3d49d8d6a2ca7ff2ea6657d3c8c19ba20ab67f529edb522030928b5f4894d20000000000",
+  "020000000001029a2b645e97cfde604d0b65aa174fb4747f8b99152f581d12d42055f3388c123e0000000000fdffffff9a2b645e97cfde604d0b65aa174fb4747f8b99152f581d12d42055f3388c123e0100000000fdffffff0180250000000000001600143d366a85a8c07a44b5eed0a622197d6784c07e69000247304402201596d19c0eec785d301dad21ecc8bad1d808d4bd15615df1a5a1b9e930404066022038126c82743ccf5bc225b61a38ddd7ae651f12d27a730817de79279df8fd0ab88121028cc283639d0254c3f3091659d66f7681189de1ade326d36eefa50217956b057b00000000",
+  "020000000001029a2b645e97cfde604d0b65aa174fb4747f8b99152f581d12d42055f3388c123e0000000000fdffffff9a2b645e97cfde604d0b65aa174fb4747f8b99152f581d12d42055f3388c123e0100000000fdffffff0180250000000000001600143d366a85a8c07a44b5eed0a622197d6784c07e69024730440220451546bae0bc61270eec966f1ca0a5cb16a93c5f88a800094240e61fb3f6fdd7022021a0065ec25e06f9e0b3a4d87b06d13adc2bd620dd8f2ecf7a40366ceaa93e998121039a3d49d8d6a2ca7ff2ea6657d3c8c19ba20ab67f529edb522030928b5f4894d20000000000",
 ];
 const result = await client.combinerawtransaction({ txs });
 ```
@@ -528,13 +528,13 @@ const result = await client.combinerawtransaction({ txs });
 
 ```javascript
 const hexstring =
-	"020000000122647b4fc186385b15a01cc6cd6d7864399b4ff536f370f86ecc5e2f4281d7d50000000000ffffffff017b000000000000001976a914394e47d5a2d723e34b38b05e257c6ab69be3b59988ac00000000";
+  "020000000122647b4fc186385b15a01cc6cd6d7864399b4ff536f370f86ecc5e2f4281d7d50000000000ffffffff017b000000000000001976a914394e47d5a2d723e34b38b05e257c6ab69be3b59988ac00000000";
 const permitsigdata = true;
 const iswitness = true;
 const result = await client.converttopsbt({
-	hexstring,
-	permitsigdata,
-	iswitness,
+  hexstring,
+  permitsigdata,
+  iswitness,
 });
 ```
 
@@ -542,30 +542,30 @@ const result = await client.converttopsbt({
 
 ```javascript
 const inputs = [
-	{
-		txid: "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
-		vout: 1,
-	},
-	{
-		txid: "ff758ffd73729be8afae0d683547f7840bdaee75ad5e5c464fb621b2509c366b",
-		vout: 0,
-	},
+  {
+    txid: "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
+    vout: 1,
+  },
+  {
+    txid: "ff758ffd73729be8afae0d683547f7840bdaee75ad5e5c464fb621b2509c366b",
+    vout: 0,
+  },
 ];
 const outputs = [
-	{
-		tb1qdacfrqauwercrz9jxf0jae5jarqy8ju0ywt8su: 0.00215,
-	},
-	{
-		tb1qkufhmlk33llrjma7pvt8scyva0w5tv0tvuy6zs: 0.001,
-	},
+  {
+    tb1qdacfrqauwercrz9jxf0jae5jarqy8ju0ywt8su: 0.00215,
+  },
+  {
+    tb1qkufhmlk33llrjma7pvt8scyva0w5tv0tvuy6zs: 0.001,
+  },
 ];
 const locktime = 1;
 const replaceable = true;
 const result = await client.createpsbt({
-	inputs,
-	outputs,
-	locktime,
-	replaceable,
+  inputs,
+  outputs,
+  locktime,
+  replaceable,
 });
 ```
 
@@ -573,30 +573,30 @@ const result = await client.createpsbt({
 
 ```javascript
 const inputs = [
-	{
-		txid: "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
-		vout: 1,
-	},
-	{
-		txid: "ff758ffd73729be8afae0d683547f7840bdaee75ad5e5c464fb621b2509c366b",
-		vout: 0,
-	},
+  {
+    txid: "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
+    vout: 1,
+  },
+  {
+    txid: "ff758ffd73729be8afae0d683547f7840bdaee75ad5e5c464fb621b2509c366b",
+    vout: 0,
+  },
 ];
 const outputs = [
-	{
-		tb1qdacfrqauwercrz9jxf0jae5jarqy8ju0ywt8su: 0.00215,
-	},
-	{
-		tb1qkufhmlk33llrjma7pvt8scyva0w5tv0tvuy6zs: 0.001,
-	},
+  {
+    tb1qdacfrqauwercrz9jxf0jae5jarqy8ju0ywt8su: 0.00215,
+  },
+  {
+    tb1qkufhmlk33llrjma7pvt8scyva0w5tv0tvuy6zs: 0.001,
+  },
 ];
 const locktime = 1;
 const replaceable = true;
 const result = await client.createrawtransaction({
-	inputs,
-	outputs,
-	locktime,
-	replaceable,
+  inputs,
+  outputs,
+  locktime,
+  replaceable,
 });
 ```
 
@@ -604,7 +604,7 @@ const result = await client.createrawtransaction({
 
 ```javascript
 const psbt =
-	"cHNidP8BAJoCAAAAAtVSFGEYzcJX2qwhy8iJGI1Y/zeIqBQtH/OBC9WJ4mx7AQAAAAD9////azacULIhtk9GXF6tde7aC4T3RzVoDa6v6Jtyc/2Pdf8AAAAAAP3///8C2EcDAAAAAAAWABRvcJGDvHZHgYiyMl8u5pLowEPLj6CGAQAAAAAAFgAUtxN9/tGP/jlvvgsWeGCM691FsesBAAAAAAAAAAA=";
+  "cHNidP8BAJoCAAAAAtVSFGEYzcJX2qwhy8iJGI1Y/zeIqBQtH/OBC9WJ4mx7AQAAAAD9////azacULIhtk9GXF6tde7aC4T3RzVoDa6v6Jtyc/2Pdf8AAAAAAP3///8C2EcDAAAAAAAWABRvcJGDvHZHgYiyMl8u5pLowEPLj6CGAQAAAAAAFgAUtxN9/tGP/jlvvgsWeGCM691FsesBAAAAAAAAAAA=";
 const result = await client.decodepsbt({ psbt });
 ```
 
@@ -612,7 +612,7 @@ const result = await client.decodepsbt({ psbt });
 
 ```javascript
 const hexstring =
-	"0200000002d552146118cdc257daac21cbc889188d58ff3788a8142d1ff3810bd589e26c7b0100000000fdffffff6b369c50b221b64f465c5ead75eeda0b84f74735680daeafe89b7273fd8f75ff0000000000fdffffff02d8470300000000001600146f709183bc76478188b2325f2ee692e8c043cb8fa086010000000000160014b7137dfed18ffe396fbe0b1678608cebdd45b1eb01000000";
+  "0200000002d552146118cdc257daac21cbc889188d58ff3788a8142d1ff3810bd589e26c7b0100000000fdffffff6b369c50b221b64f465c5ead75eeda0b84f74735680daeafe89b7273fd8f75ff0000000000fdffffff02d8470300000000001600146f709183bc76478188b2325f2ee692e8c043cb8fa086010000000000160014b7137dfed18ffe396fbe0b1678608cebdd45b1eb01000000";
 const iswitness = true;
 const result = await client.decoderawtransaction({ hexstring, iswitness });
 ```
@@ -621,7 +621,7 @@ const result = await client.decoderawtransaction({ hexstring, iswitness });
 
 ```javascript
 const hexstring =
-	"5221031e925dbe43ca87bce874f4fb77ac0d6bb2dc1a9db93868fa27611b687775bd0b2102ffb8b66ba266797f1e33e5d177a6f9c72839992ccf11e97837054a8d3a8284bc21025bf696347321a5276aad08dfefff19dd09d3717bfc2ce521060f4247d31c37b553ae";
+  "5221031e925dbe43ca87bce874f4fb77ac0d6bb2dc1a9db93868fa27611b687775bd0b2102ffb8b66ba266797f1e33e5d177a6f9c72839992ccf11e97837054a8d3a8284bc21025bf696347321a5276aad08dfefff19dd09d3717bfc2ce521060f4247d31c37b553ae";
 const result = await client.decodescript({ hexstring });
 ```
 
@@ -629,7 +629,7 @@ const result = await client.decodescript({ hexstring });
 
 ```javascript
 const psbt =
-	"cHNidP8BAHsCAAAAAn+RFbuIDPiBkN5ua0vnUVZwwvbnnDZ8Ca4Z6y3vQyqnAAAAAAD9////KUVYeBVxQc4IZCvsc2WohVhZanD54jy11Gxxn4YRtpYBAAAAAP3///8BYII7AAAAAAAWABSANbyZwTJ0B7qPqpWSolEEKYbIFQEAAAAAAQEfIAMAAAAAAAAWABRCHnul3Lf2vUn4GUU9mrnGLnTHsQEIawJHMEQCIAenBxHwiJAo9Mt/0B0gsflruKfe90W0OUaW/gMqT13hAiBrcsvglEZvxDWKKhMLArU52ndMb6cAangC/u6mowwjGAEhAoNFASSjynZOTTIf6bOnANXURu5zQ9eGpUAcB1x569/qAAEBH8eBOwAAAAAAFgAUM0FW+4lXrlP/+jauvoCEpLAM+30BCGsCRzBEAiBbIUvwV1aHSQHwJsovYaxU9BTZaBv0Thi87An0oux4yAIgcF1o//O5iDtjhwvkH6COw5QHg8Wyzr52cAKmf/5T1SMBIQNOLcpPJlb28pa3FjF+WjkHuXU8dKqfQZSV/wCxeQZ+9AAA";
+  "cHNidP8BAHsCAAAAAn+RFbuIDPiBkN5ua0vnUVZwwvbnnDZ8Ca4Z6y3vQyqnAAAAAAD9////KUVYeBVxQc4IZCvsc2WohVhZanD54jy11Gxxn4YRtpYBAAAAAP3///8BYII7AAAAAAAWABSANbyZwTJ0B7qPqpWSolEEKYbIFQEAAAAAAQEfIAMAAAAAAAAWABRCHnul3Lf2vUn4GUU9mrnGLnTHsQEIawJHMEQCIAenBxHwiJAo9Mt/0B0gsflruKfe90W0OUaW/gMqT13hAiBrcsvglEZvxDWKKhMLArU52ndMb6cAangC/u6mowwjGAEhAoNFASSjynZOTTIf6bOnANXURu5zQ9eGpUAcB1x569/qAAEBH8eBOwAAAAAAFgAUM0FW+4lXrlP/+jauvoCEpLAM+30BCGsCRzBEAiBbIUvwV1aHSQHwJsovYaxU9BTZaBv0Thi87An0oux4yAIgcF1o//O5iDtjhwvkH6COw5QHg8Wyzr52cAKmf/5T1SMBIQNOLcpPJlb28pa3FjF+WjkHuXU8dKqfQZSV/wCxeQZ+9AAA";
 const extract = true;
 const result = await client.finalizepsbt({ psbt, extract });
 ```
@@ -638,7 +638,7 @@ const result = await client.finalizepsbt({ psbt, extract });
 
 ```javascript
 const hexstring =
-	"020000000129455878157141ce08642bec7365a88558596a70f9e23cb5d46c719f8611b6960000000000fdffffff0140420f00000000001600148470e04e616ab6552d72e8284a32a293ff8a959b00000000";
+  "020000000129455878157141ce08642bec7365a88558596a70f9e23cb5d46c719f8611b6960000000000fdffffff0140420f00000000001600148470e04e616ab6552d72e8284a32a293ff8a959b00000000";
 const includeWatching = true;
 const feeRate = 0.0002;
 const replaceable = true;
@@ -647,12 +647,12 @@ const wallet = "bitcoin-core-wallet.dat";
 const options = { includeWatching, feeRate, replaceable, changeAddress };
 const iswitness = true;
 const result = await client.fundrawtransaction(
-	{
-		hexstring,
-		options,
-		iswitness,
-	},
-	wallet
+  {
+    hexstring,
+    options,
+    iswitness,
+  },
+  wallet
 );
 ```
 
@@ -662,7 +662,7 @@ const result = await client.fundrawtransaction(
 const txid = "a32ddaed3387a2bc0bb9a4f90bc6e84e5589335b97142848ad144efd38420eb2";
 const verbose = true;
 const blockhash =
-	"00000000480351c0fc7047af37756bbae30996a018e94d9ca8156dccea032018";
+  "00000000480351c0fc7047af37756bbae30996a018e94d9ca8156dccea032018";
 const result = await client.getrawtransaction({ txid, verbose, blockhash });
 ```
 
@@ -670,8 +670,8 @@ const result = await client.getrawtransaction({ txid, verbose, blockhash });
 
 ```javascript
 const txs = [
-	"cHNidP8BAFICAAAAAdVSFGEYzcJX2qwhy8iJGI1Y/zeIqBQtH/OBC9WJ4mx7AQAAAAD9////AdhHAwAAAAAAFgAUb3CRg7x2R4GIsjJfLuaS6MBDy48BAAAAAAAA",
-	"cHNidP8BAFICAAAAAWs2nFCyIbZPRlxerXXu2guE90c1aA2ur+ibcnP9j3X/AAAAAAD9////AaCGAQAAAAAAFgAUtxN9/tGP/jlvvgsWeGCM691FsesBAAAAAAAA",
+  "cHNidP8BAFICAAAAAdVSFGEYzcJX2qwhy8iJGI1Y/zeIqBQtH/OBC9WJ4mx7AQAAAAD9////AdhHAwAAAAAAFgAUb3CRg7x2R4GIsjJfLuaS6MBDy48BAAAAAAAA",
+  "cHNidP8BAFICAAAAAWs2nFCyIbZPRlxerXXu2guE90c1aA2ur+ibcnP9j3X/AAAAAAD9////AaCGAQAAAAAAFgAUtxN9/tGP/jlvvgsWeGCM691FsesBAAAAAAAA",
 ];
 const result = await client.joinpsbts({ txs });
 ```
@@ -680,7 +680,7 @@ const result = await client.joinpsbts({ txs });
 
 ```javascript
 const hexstring =
-	"020000000001027f9115bb880cf88190de6e6b4be7515670c2f6e79c367c09ae19eb2def432aa70000000000fdffffff29455878157141ce08642bec7365a88558596a70f9e23cb5d46c719f8611b6960100000000fdffffff0160823b00000000001600148035bc99c1327407ba8faa9592a251042986c81502473044022007a70711f0889028f4cb7fd01d20b1f96bb8a7def745b4394696fe032a4f5de102206b72cbe094466fc4358a2a130b02b539da774c6fa7006a7802feeea6a30c231801210283450124a3ca764e4d321fe9b3a700d5d446ee7343d786a5401c075c79ebdfea0247304402205b214bf05756874901f026ca2f61ac54f414d9681bf44e18bcec09f4a2ec78c80220705d68fff3b9883b63870be41fa08ec3940783c5b2cebe767002a67ffe53d5230121034e2dca4f2656f6f296b716317e5a3907b9753c74aa9f419495ff00b179067ef401000000";
+  "020000000001027f9115bb880cf88190de6e6b4be7515670c2f6e79c367c09ae19eb2def432aa70000000000fdffffff29455878157141ce08642bec7365a88558596a70f9e23cb5d46c719f8611b6960100000000fdffffff0160823b00000000001600148035bc99c1327407ba8faa9592a251042986c81502473044022007a70711f0889028f4cb7fd01d20b1f96bb8a7def745b4394696fe032a4f5de102206b72cbe094466fc4358a2a130b02b539da774c6fa7006a7802feeea6a30c231801210283450124a3ca764e4d321fe9b3a700d5d446ee7343d786a5401c075c79ebdfea0247304402205b214bf05756874901f026ca2f61ac54f414d9681bf44e18bcec09f4a2ec78c80220705d68fff3b9883b63870be41fa08ec3940783c5b2cebe767002a67ffe53d5230121034e2dca4f2656f6f296b716317e5a3907b9753c74aa9f419495ff00b179067ef401000000";
 const allowhighfees = true;
 const result = await client.sendrawtransaction({ hexstring, allowhighfees });
 ```
@@ -689,22 +689,22 @@ const result = await client.sendrawtransaction({ hexstring, allowhighfees });
 
 ```javascript
 const hexstring =
-	"0200000002d552146118cdc257daac21cbc889188d58ff3788a8142d1ff3810bd589e26c7b0000000000fdffffff6dd6a088fda2de4c1f25912f5c6f53fdafd54abf6557d888af5ceac704a26d050100000000fdffffff0200093d0000000000160014fc8e119e52776678cc05cab6b024eb77cea2f11620cc0400000000001600141ca68ece7a876e66d377c0a1bc5d45251513c20800000000";
+  "0200000002d552146118cdc257daac21cbc889188d58ff3788a8142d1ff3810bd589e26c7b0000000000fdffffff6dd6a088fda2de4c1f25912f5c6f53fdafd54abf6557d888af5ceac704a26d050100000000fdffffff0200093d0000000000160014fc8e119e52776678cc05cab6b024eb77cea2f11620cc0400000000001600141ca68ece7a876e66d377c0a1bc5d45251513c20800000000";
 const privkeys = ["privkey1", "privkey2"];
 const prevtxs = [
-	{
-		txid: "cc21b8cb612f7b451e4283f08b3fa96ccdc141441697c499366f42514b3bdd15",
-		vout: 0,
-		scriptPubKey: "00141ca68ece7a876e66d377c0a1bc5d45251513c208",
-		amount: 0.001,
-	},
+  {
+    txid: "cc21b8cb612f7b451e4283f08b3fa96ccdc141441697c499366f42514b3bdd15",
+    vout: 0,
+    scriptPubKey: "00141ca68ece7a876e66d377c0a1bc5d45251513c208",
+    amount: 0.001,
+  },
 ];
 const sighashtype = "ALL|ANYONECANPAY";
 const result = await client.signrawtransactionwithkey({
-	hexstring,
-	privkeys,
-	prevtxs,
-	sighashtype,
+  hexstring,
+  privkeys,
+  prevtxs,
+  sighashtype,
 });
 ```
 
@@ -712,7 +712,7 @@ const result = await client.signrawtransactionwithkey({
 
 ```javascript
 const rawtxs = [
-	"020000000001027f9115bb880cf88190de6e6b4be7515670c2f6e79c367c09ae19eb2def432aa70000000000fdffffff29455878157141ce08642bec7365a88558596a70f9e23cb5d46c719f8611b6960100000000fdffffff0160823b00000000001600148035bc99c1327407ba8faa9592a251042986c81502473044022007a70711f0889028f4cb7fd01d20b1f96bb8a7def745b4394696fe032a4f5de102206b72cbe094466fc4358a2a130b02b539da774c6fa7006a7802feeea6a30c231801210283450124a3ca764e4d321fe9b3a700d5d446ee7343d786a5401c075c79ebdfea0247304402205b214bf05756874901f026ca2f61ac54f414d9681bf44e18bcec09f4a2ec78c80220705d68fff3b9883b63870be41fa08ec3940783c5b2cebe767002a67ffe53d5230121034e2dca4f2656f6f296b716317e5a3907b9753c74aa9f419495ff00b179067ef401000000",
+  "020000000001027f9115bb880cf88190de6e6b4be7515670c2f6e79c367c09ae19eb2def432aa70000000000fdffffff29455878157141ce08642bec7365a88558596a70f9e23cb5d46c719f8611b6960100000000fdffffff0160823b00000000001600148035bc99c1327407ba8faa9592a251042986c81502473044022007a70711f0889028f4cb7fd01d20b1f96bb8a7def745b4394696fe032a4f5de102206b72cbe094466fc4358a2a130b02b539da774c6fa7006a7802feeea6a30c231801210283450124a3ca764e4d321fe9b3a700d5d446ee7343d786a5401c075c79ebdfea0247304402205b214bf05756874901f026ca2f61ac54f414d9681bf44e18bcec09f4a2ec78c80220705d68fff3b9883b63870be41fa08ec3940783c5b2cebe767002a67ffe53d5230121034e2dca4f2656f6f296b716317e5a3907b9753c74aa9f419495ff00b179067ef401000000",
 ];
 const allowhighfees = true;
 const result = await client.testmempoolaccept({ rawtxs, allowhighfees });
@@ -722,7 +722,7 @@ const result = await client.testmempoolaccept({ rawtxs, allowhighfees });
 
 ```javascript
 const psbt =
-	"cHNidP8BAHsCAAAAAn+RFbuIDPiBkN5ua0vnUVZwwvbnnDZ8Ca4Z6y3vQyqnAAAAAAD9////KUVYeBVxQc4IZCvsc2WohVhZanD54jy11Gxxn4YRtpYBAAAAAP3///8BYII7AAAAAAAWABSANbyZwTJ0B7qPqpWSolEEKYbIFQEAAAAAAQEfIAMAAAAAAAAWABRCHnul3Lf2vUn4GUU9mrnGLnTHsQEIawJHMEQCIAenBxHwiJAo9Mt/0B0gsflruKfe90W0OUaW/gMqT13hAiBrcsvglEZvxDWKKhMLArU52ndMb6cAangC/u6mowwjGAEhAoNFASSjynZOTTIf6bOnANXURu5zQ9eGpUAcB1x569/qAAAA";
+  "cHNidP8BAHsCAAAAAn+RFbuIDPiBkN5ua0vnUVZwwvbnnDZ8Ca4Z6y3vQyqnAAAAAAD9////KUVYeBVxQc4IZCvsc2WohVhZanD54jy11Gxxn4YRtpYBAAAAAP3///8BYII7AAAAAAAWABSANbyZwTJ0B7qPqpWSolEEKYbIFQEAAAAAAQEfIAMAAAAAAAAWABRCHnul3Lf2vUn4GUU9mrnGLnTHsQEIawJHMEQCIAenBxHwiJAo9Mt/0B0gsflruKfe90W0OUaW/gMqT13hAiBrcsvglEZvxDWKKhMLArU52ndMb6cAangC/u6mowwjGAEhAoNFASSjynZOTTIf6bOnANXURu5zQ9eGpUAcB1x569/qAAAA";
 const result = await client.utxoupdatepsbt({ psbt });
 ```
 
@@ -733,8 +733,8 @@ const result = await client.utxoupdatepsbt({ psbt });
 ```javascript
 const nrequired = 2;
 const keys = [
-	"03789ed0bb717d88f7d321a368d905e7430207ebbd82bd342cf11ae157a7ace5fd",
-	"03dbc6764b8884a92e871274b87583e6d5c2a58819473e17e107ef3f6aa5a61626",
+  "03789ed0bb717d88f7d321a368d905e7430207ebbd82bd342cf11ae157a7ace5fd",
+  "03dbc6764b8884a92e871274b87583e6d5c2a58819473e17e107ef3f6aa5a61626",
 ];
 const address_type = "bech32";
 const result = await client.createmultisig({ nrequired, keys, address_type });
@@ -744,7 +744,7 @@ const result = await client.createmultisig({ nrequired, keys, address_type });
 
 ```javascript
 const descriptor =
-	"wpkh([d34db33f/84'/0'/0']tpubD6NzVbkrYhZ4YTN7usjEzYmfu4JKqnfp9RCbDmdKH78vTyuwgQat8vRw5cX1YaZZvFfQrkHrM2XsyfA8cZE1thA3guTBfTkKqbhCDpcKFLG/0/*)#8gfuh6ex";
+  "wpkh([d34db33f/84'/0'/0']tpubD6NzVbkrYhZ4YTN7usjEzYmfu4JKqnfp9RCbDmdKH78vTyuwgQat8vRw5cX1YaZZvFfQrkHrM2XsyfA8cZE1thA3guTBfTkKqbhCDpcKFLG/0/*)#8gfuh6ex";
 const range = [0, 2];
 const result = await client.deriveaddresses({ descriptor, range });
 ```
@@ -761,7 +761,7 @@ const result = await client.estimatesmartfee({ conf_target, estimate_mode });
 
 ```javascript
 const descriptor =
-	"wpkh([d34db33f/84h/0h/0h]0279be667ef9dcbbac55a06295Ce870b07029Bfcdb2dce28d959f2815b16f81798)";
+  "wpkh([d34db33f/84h/0h/0h]0279be667ef9dcbbac55a06295Ce870b07029Bfcdb2dce28d959f2815b16f81798)";
 const result = await client.getdescriptorinfo({ descriptor });
 ```
 
@@ -786,7 +786,7 @@ const result = await client.validateaddress({ address });
 const address = "myv3xs1BBBhaDVU62LFNBho2zSp4KLBkgK";
 const message = "Hello World";
 const signature =
-	"H14/QyrMj8e63GyEXBDDWnWrplXK3OORnMc3B+fEOOisbNFEAQuNB9myAH9qs7h1VNJb1xq1ytPQqiLcmSwwPv8=";
+  "H14/QyrMj8e63GyEXBDDWnWrplXK3OORnMc3B+fEOOisbNFEAQuNB9myAH9qs7h1VNJb1xq1ytPQqiLcmSwwPv8=";
 const result = await client.verifymessage({ address, message, signature });
 ```
 
@@ -813,14 +813,14 @@ const result = await client.abortrescan(wallet);
 const wallet = "bitcoin-core-wallet.dat";
 const nrequired = 2;
 const keys = [
-	"030b0f444121f91cf323ad599ee8ced39dcbb136905e8ac42f9bdb4756142c716f",
-	"02ea2e2847de9386b704cacb5c730c272c4f3e7b14a586ca6122cdacff5dea59e9",
+  "030b0f444121f91cf323ad599ee8ced39dcbb136905e8ac42f9bdb4756142c716f",
+  "02ea2e2847de9386b704cacb5c730c272c4f3e7b14a586ca6122cdacff5dea59e9",
 ];
 const label = "NewMultiSigAddress";
 const address_type = "bech32";
 const result = await client.addmultisigaddress(
-	{ nrequired, keys, label, address_type },
-	wallet
+  { nrequired, keys, label, address_type },
+  wallet
 );
 ```
 
@@ -851,9 +851,9 @@ const wallet_name = "bitcoin-core-wallet.dat";
 const disable_private_keys = true;
 const blank = true;
 const result = await client.createwallet({
-	wallet_name,
-	disable_private_keys,
-	blank,
+  wallet_name,
+  disable_private_keys,
+  blank,
 });
 ```
 
@@ -935,7 +935,7 @@ const result = await client.getrawchangeaddress({ address_type }, wallet);
 ```javascript
 const wallet = "bitcoin-core-wallet.dat";
 const address =
-	"tb1qg9nfs5ll5h3xl3h8xqhw8wg4sj6j6g6666cstmeg7v2q4ty0ccsqg5du3n";
+  "tb1qg9nfs5ll5h3xl3h8xqhw8wg4sj6j6g6666cstmeg7v2q4ty0ccsqg5du3n";
 const minconf = 6;
 const result = await client.getreceivedbyaddress({ address, minconf }, wallet);
 ```
@@ -981,8 +981,8 @@ const label = "ImportedAddress";
 const rescan = false;
 const p2sh = false;
 const result = await client.importaddress(
-	{ address, label, rescan, p2sh },
-	wallet
+  { address, label, rescan, p2sh },
+  wallet
 );
 ```
 
@@ -991,22 +991,22 @@ const result = await client.importaddress(
 ```javascript
 const wallet = "bitcoin-core-wallet.dat";
 const requests = [
-	{
-		desc: "wpkh(tpubD6NzVbkrYhZ4Wk5MMULiQd4XkBe3KeG6GCUNrWcXu27PJwqFfHF7geuTPfPZcViUpV7ny6MHVnbvxdCSfkooFb7bBJiQgKXCVM58XZiVyHu/0/*)#9tk43hcd",
-		range: [2, 5],
-		internal: true,
-		watchonly: true,
-		timestamp: 0,
-	},
-	{
-		scriptPubKey: { address: "tb1q0pjl9cy0t38uvyfs75t7av7ujrhs65xx0nfjmf" },
-		timestamp: "now",
-	},
-	{
-		scriptPubKey: { address: "tb1qxqt28qy3uvj8qeucm60dnrzty3cccx88hp9car" },
-		keys: ["cQfkAynVm54Je8mXYH6zkKKjug7ehheUeMx5jnWTvy94M73X2Vdj"],
-		timestamp: "now",
-	},
+  {
+    desc: "wpkh(tpubD6NzVbkrYhZ4Wk5MMULiQd4XkBe3KeG6GCUNrWcXu27PJwqFfHF7geuTPfPZcViUpV7ny6MHVnbvxdCSfkooFb7bBJiQgKXCVM58XZiVyHu/0/*)#9tk43hcd",
+    range: [2, 5],
+    internal: true,
+    watchonly: true,
+    timestamp: 0,
+  },
+  {
+    scriptPubKey: { address: "tb1q0pjl9cy0t38uvyfs75t7av7ujrhs65xx0nfjmf" },
+    timestamp: "now",
+  },
+  {
+    scriptPubKey: { address: "tb1qxqt28qy3uvj8qeucm60dnrzty3cccx88hp9car" },
+    keys: ["cQfkAynVm54Je8mXYH6zkKKjug7ehheUeMx5jnWTvy94M73X2Vdj"],
+    timestamp: "now",
+  },
 ];
 const options = { rescan: false };
 const result = await client.importmulti({ requests, options }, wallet);
@@ -1027,12 +1027,12 @@ const result = await client.importprivkey({ privkey, label, rescan }, wallet);
 ```javascript
 const wallet = "bitcoin-core-wallet.dat";
 const rawtransaction =
-	"0200000000010422647b4fc186385b15a01cc6cd6d7864399b4ff536f370f86ecc5e2f4281d7d50000000017160014013b2e1e130cd463f3be9fce311cfbf6f862d224fdffffffc61430e9a56a5ebba761828078c9a5f03571da6fbf40f4f87f7d72cbcbaf6f5e0000000000fdffffffe399e3ebf69237d36ba6f5d7ccb8f2d79923e19733fb4b7fc58f11b789f89653000000006a47304402204ea849bac52e0f76b7df9b196cad692cc8e253778c999d67627f2a9c487067e00220245e9446863037949dac77cb34f532376749507e6d499418fe51144c6e950725012103bb1add1e1e6093caa59f127ff3d477f8ac210f2ca1f8c81ff8c1602d9a5bacd0fdffffffd37c62273bfaeffee551ccaa1e06a6daa1e9d32248798821e33c6623ea17b9910000000000fdffffff022785400000000000160014740535b933895ac1caf3ba92976993f7fd9d2e99a086010000000000160014000243d945554d568a6858f5f243d9510258d75c0247304402207400692ba5ecfeda204468905b138c0f7e6cf2d02be119094864db1c48c21f7c022008ccad54fb2cdc107a96c8a56b3e80867e4cfa8c904e9a78f27f10fc8071fb430121026c9b6d74350725506d14613cabade7f447fb67eb416c8ef34323da77f7299c2302473044022024d43ee736fe458b739f32866c35a6dfe7ca352acd7b76a25472c4a8246a5ead022073db04ee5a894a6eb949ab56046416fd5090f44f65fe3a6ab68b4a5b540bb6b20121028ff8402568eea88e93d30b4b2e6c7125bdb894cbf27c87a2101e35e0b1f5ff2e000247304402205e9b129b0a0c2c0fb458c1f397d462fd4db46cf7fffd19dc9189e421f1f61fac0220424e8cbfa9a01160033cae4955bc44c6f958d3afc7ccc67aef0a23c5f95bf37e012102228f0d709aacaa24fb4712c8fca4b10c9f4cfb60dcaa4d34b58660080a8bd8435e1e1800";
+  "0200000000010422647b4fc186385b15a01cc6cd6d7864399b4ff536f370f86ecc5e2f4281d7d50000000017160014013b2e1e130cd463f3be9fce311cfbf6f862d224fdffffffc61430e9a56a5ebba761828078c9a5f03571da6fbf40f4f87f7d72cbcbaf6f5e0000000000fdffffffe399e3ebf69237d36ba6f5d7ccb8f2d79923e19733fb4b7fc58f11b789f89653000000006a47304402204ea849bac52e0f76b7df9b196cad692cc8e253778c999d67627f2a9c487067e00220245e9446863037949dac77cb34f532376749507e6d499418fe51144c6e950725012103bb1add1e1e6093caa59f127ff3d477f8ac210f2ca1f8c81ff8c1602d9a5bacd0fdffffffd37c62273bfaeffee551ccaa1e06a6daa1e9d32248798821e33c6623ea17b9910000000000fdffffff022785400000000000160014740535b933895ac1caf3ba92976993f7fd9d2e99a086010000000000160014000243d945554d568a6858f5f243d9510258d75c0247304402207400692ba5ecfeda204468905b138c0f7e6cf2d02be119094864db1c48c21f7c022008ccad54fb2cdc107a96c8a56b3e80867e4cfa8c904e9a78f27f10fc8071fb430121026c9b6d74350725506d14613cabade7f447fb67eb416c8ef34323da77f7299c2302473044022024d43ee736fe458b739f32866c35a6dfe7ca352acd7b76a25472c4a8246a5ead022073db04ee5a894a6eb949ab56046416fd5090f44f65fe3a6ab68b4a5b540bb6b20121028ff8402568eea88e93d30b4b2e6c7125bdb894cbf27c87a2101e35e0b1f5ff2e000247304402205e9b129b0a0c2c0fb458c1f397d462fd4db46cf7fffd19dc9189e421f1f61fac0220424e8cbfa9a01160033cae4955bc44c6f958d3afc7ccc67aef0a23c5f95bf37e012102228f0d709aacaa24fb4712c8fca4b10c9f4cfb60dcaa4d34b58660080a8bd8435e1e1800";
 const txoutproof =
-	"000040205853c9a97816b63b9bb539f7b4cfb8c8a36ee0d9b6e1c59df102000000000000ab93331e4cae84da202131b6418e61e30095a81108edb09376ad7d02768d72c348ff9a5d74c4031a712e7b5614000000040cce7e642af08fd68ddcf0b7630ad88c4110c91fcdb7f792f6253bef56181bf201d52b2f5696dd23973b09dd34c2447aadeeb31ada2ff4b1d88d238c8cb2081a0a6331dd8ded7863f79cd3574812d032d5bc7c96df137ddb0d3b794ac2a26f199b66a00a8b8376f3bd0b1c7f9827b403242976d1dc16ed8bc6ec7e11c1f028bf02dd00";
+  "000040205853c9a97816b63b9bb539f7b4cfb8c8a36ee0d9b6e1c59df102000000000000ab93331e4cae84da202131b6418e61e30095a81108edb09376ad7d02768d72c348ff9a5d74c4031a712e7b5614000000040cce7e642af08fd68ddcf0b7630ad88c4110c91fcdb7f792f6253bef56181bf201d52b2f5696dd23973b09dd34c2447aadeeb31ada2ff4b1d88d238c8cb2081a0a6331dd8ded7863f79cd3574812d032d5bc7c96df137ddb0d3b794ac2a26f199b66a00a8b8376f3bd0b1c7f9827b403242976d1dc16ed8bc6ec7e11c1f028bf02dd00";
 const result = await client.importprunedfunds(
-	{ rawtransaction, txoutproof },
-	wallet
+  { rawtransaction, txoutproof },
+  wallet
 );
 ```
 
@@ -1041,7 +1041,7 @@ const result = await client.importprunedfunds(
 ```javascript
 const wallet = "bitcoin-core-wallet.dat";
 const pubkey =
-	"023ef8f5fa2a18c07d714d942e4aa933827df7d5fba43a513be22581fc0ce83207";
+  "023ef8f5fa2a18c07d714d942e4aa933827df7d5fba43a513be22581fc0ce83207";
 const label = "SomeAddress";
 const rescan = false;
 const result = await client.importpubkey({ pubkey, label, rescan }, wallet);
@@ -1094,8 +1094,8 @@ const include_empty = false;
 const include_watchonly = false;
 const address_filter = "tb1qyferlkpvr7v3r5ne7jh2avjuvnxkf08lqhpqe9";
 const result = await client.listreceivedbyaddress(
-	{ minconf, include_empty, include_watchonly, address_filter },
-	wallet
+  { minconf, include_empty, include_watchonly, address_filter },
+  wallet
 );
 ```
 
@@ -1107,8 +1107,8 @@ const minconf = 6;
 const include_empty = true;
 const include_watchonly = true;
 const result = await client.listreceivedbylabel(
-	{ minconf, include_empty, include_watchonly },
-	wallet
+  { minconf, include_empty, include_watchonly },
+  wallet
 );
 ```
 
@@ -1117,13 +1117,13 @@ const result = await client.listreceivedbylabel(
 ```javascript
 const wallet = "bitcoin-core-wallet.dat";
 const blockhash =
-	"00000000001ad9877c5a839c65371a18e1392a2be83378915e01342a368caaef";
+  "00000000001ad9877c5a839c65371a18e1392a2be83378915e01342a368caaef";
 const target_confirmations = 6;
 const include_watchonly = true;
 const include_removed = false;
 const result = await client.listsinceblock(
-	{ blockhash, target_confirmations, include_watchonly, include_removed },
-	wallet
+  { blockhash, target_confirmations, include_watchonly, include_removed },
+  wallet
 );
 ```
 
@@ -1136,8 +1136,8 @@ const count = 5;
 const skip = 4;
 const include_watchonly = true;
 const result = await client.listtransactions(
-	{ label, count, skip, include_watchonly },
-	wallet
+  { label, count, skip, include_watchonly },
+  wallet
 );
 ```
 
@@ -1148,19 +1148,19 @@ const wallet = "bitcoin-core-wallet.dat";
 const minconf = 1;
 const maxconf = 100;
 const addresses = [
-	"tb1qg9nfs5ll5h3xl3h8xqhw8wg4sj6j6g6666cstmeg7v2q4ty0ccsqg5du3n",
-	"tb1q8vd7hh77afe2aans7vywyt8txvz84r3pwkmny4",
+  "tb1qg9nfs5ll5h3xl3h8xqhw8wg4sj6j6g6666cstmeg7v2q4ty0ccsqg5du3n",
+  "tb1q8vd7hh77afe2aans7vywyt8txvz84r3pwkmny4",
 ];
 const include_unsafe = false;
 const query_options = {
-	minimumAmount: 0.0001,
-	maximumAmount: 0.01,
-	maximumCount: 2,
-	minimumSumAmount: 10,
+  minimumAmount: 0.0001,
+  maximumAmount: 0.01,
+  maximumCount: 2,
+  minimumSumAmount: 10,
 };
 const result = await client.listunspent(
-	{ minconf, maxconf, addresses, include_unsafe, query_options },
-	wallet
+  { minconf, maxconf, addresses, include_unsafe, query_options },
+  wallet
 );
 ```
 
@@ -1189,14 +1189,14 @@ const result = await client.loadwallet({ filename });
 const wallet = "bitcoin-core-wallet.dat";
 const unlock = true;
 const transactions = [
-	{
-		txid: "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
-		vout: 1,
-	},
-	{
-		txid: "3e128c38f35520d4121d582f15998b7f74b44f17aa650b4d60decf975e642b9a",
-		vout: 0,
-	},
+  {
+    txid: "7b6ce289d50b81f31f2d14a88837ff588d1889c8cb21acda57c2cd18611452d5",
+    vout: 1,
+  },
+  {
+    txid: "3e128c38f35520d4121d582f15998b7f74b44f17aa650b4d60decf975e642b9a",
+    vout: 0,
+  },
 ];
 const result = await client.lockunspent({ unlock, transactions }, wallet);
 ```
@@ -1216,8 +1216,8 @@ const wallet = "bitcoin-core-wallet.dat";
 const start_height = 1566870;
 const stop_height = 1566970;
 const result = await client.rescanblockchain(
-	{ start_height, stop_height },
-	wallet
+  { start_height, stop_height },
+  wallet
 );
 ```
 
@@ -1226,8 +1226,8 @@ const result = await client.rescanblockchain(
 ```javascript
 const wallet = "bitcoin-core-wallet.dat";
 const amounts = {
-	tb1qh4v0nuuglwfvzjhhjwn2mm8xa5n9mmg6azq237: 0.00002,
-	tb1qm0m54hj4hmgw4ncufh7g6gx8lp7294rgjr8vz3: "0.00003",
+  tb1qh4v0nuuglwfvzjhhjwn2mm8xa5n9mmg6azq237: 0.00002,
+  tb1qm0m54hj4hmgw4ncufh7g6gx8lp7294rgjr8vz3: "0.00003",
 };
 const minconf = 6;
 const comment = "SomeComment";
@@ -1236,16 +1236,16 @@ const replaceable = true;
 const conf_target = 20;
 const estimate_mode = "ECONOMICAL";
 const result = await client.sendmany(
-	{
-		amounts,
-		minconf,
-		comment,
-		subtractfeefrom,
-		replaceable,
-		conf_target,
-		estimate_mode,
-	},
-	wallet
+  {
+    amounts,
+    minconf,
+    comment,
+    subtractfeefrom,
+    replaceable,
+    conf_target,
+    estimate_mode,
+  },
+  wallet
 );
 ```
 
@@ -1262,17 +1262,17 @@ const replaceable = true;
 const conf_target = 20;
 const estimate_mode = "CONSERVATIVE";
 const result = await client.sendtoaddress(
-	{
-		address,
-		amount,
-		comment,
-		comment_to,
-		subtractfeefromamount,
-		replaceable,
-		conf_target,
-		estimate_mode,
-	},
-	wallet
+  {
+    address,
+    amount,
+    comment,
+    comment_to,
+    subtractfeefromamount,
+    replaceable,
+    conf_target,
+    estimate_mode,
+  },
+  wallet
 );
 ```
 
@@ -1325,19 +1325,19 @@ const result = await client.signmessage({ address, message }, wallet);
 ```javascript
 const wallet = "bitcoin-core-wallet.dat";
 const hexstring =
-	"02000000011e6de9ecf189d7101655489338d8b6437366a2694f3536080507143b06073c7a0000000000fdffffff0118a66900000000001600141b5eaac3aca51241ffa5a10cfd85b38c0035e7b100000000";
+  "02000000011e6de9ecf189d7101655489338d8b6437366a2694f3536080507143b06073c7a0000000000fdffffff0118a66900000000001600141b5eaac3aca51241ffa5a10cfd85b38c0035e7b100000000";
 const prevtxs = [
-	{
-		txid: "7a3c07063b1407050836354f69a2667343b6d8389348551610d789f1ece96d1e",
-		vout: 0,
-		scriptPubKey: "0014c92776d7c9e5c7d74f9c8093335de1928862e8ac",
-		amount: 0.06924013,
-	},
+  {
+    txid: "7a3c07063b1407050836354f69a2667343b6d8389348551610d789f1ece96d1e",
+    vout: 0,
+    scriptPubKey: "0014c92776d7c9e5c7d74f9c8093335de1928862e8ac",
+    amount: 0.06924013,
+  },
 ];
 const sighashtype = "ALL|ANYONECANPAY";
 const result = await client.signrawtransactionwithwallet(
-	{ hexstring, prevtxs, sighashtype },
-	wallet
+  { hexstring, prevtxs, sighashtype },
+  wallet
 );
 ```
 
@@ -1353,31 +1353,31 @@ const result = await client.unloadwallet({ wallet_name });
 ```javascript
 const wallet = "bitcoin-core-wallet.dat";
 const inputs = [
-	{
-		txid: "5396f889b7118fc57f4bfb3397e12399d7f2b8ccd7f5a66bd33792f6ebe399e3",
-		vout: 0,
-	},
+  {
+    txid: "5396f889b7118fc57f4bfb3397e12399d7f2b8ccd7f5a66bd33792f6ebe399e3",
+    vout: 0,
+  },
 ];
 const outputs = [
-	{
-		tb1qu7jphg0km5mrl7kx8txy3xuky9tlpvmxmehz8m: 0.001466,
-	},
+  {
+    tb1qu7jphg0km5mrl7kx8txy3xuky9tlpvmxmehz8m: 0.001466,
+  },
 ];
 const locktime = 1;
 const options = {
-	changeAddress: "tb1qc0vz2vryuadyvcux09pswnl7ng2r9fzzd3cwnf",
-	changePosition: 1,
-	includeWatching: false,
-	lockUnspents: false,
-	subtractFeeFromOutputs: [],
-	replaceable: true,
-	conf_target: 20,
-	estimate_mode: "ECONOMICAL",
+  changeAddress: "tb1qc0vz2vryuadyvcux09pswnl7ng2r9fzzd3cwnf",
+  changePosition: 1,
+  includeWatching: false,
+  lockUnspents: false,
+  subtractFeeFromOutputs: [],
+  replaceable: true,
+  conf_target: 20,
+  estimate_mode: "ECONOMICAL",
 };
 const bip32derivs = true;
 const result = await client.walletcreatefundedpsbt(
-	{ inputs, outputs, locktime, options, bip32derivs },
-	wallet
+  { inputs, outputs, locktime, options, bip32derivs },
+  wallet
 );
 ```
 
@@ -1404,8 +1404,8 @@ const wallet = "bitcoin-core-wallet.dat";
 const oldpassphrase = "SecretPassphraseDoNotTellAnyone";
 const newpassphrase = "VerySecretPassphraseDoNotTellAnyone";
 const result = await client.walletpassphrasechange(
-	{ oldpassphrase, newpassphrase },
-	wallet
+  { oldpassphrase, newpassphrase },
+  wallet
 );
 ```
 
@@ -1414,13 +1414,13 @@ const result = await client.walletpassphrasechange(
 ```javascript
 const wallet = "bitcoin-core-wallet.dat";
 const psbt =
-	"cHNidP8BAFICAAAAAesycXqP/ZnHQ42fCokY4ws3HyKokiDXfsosfWt2t83wAAAAAAD9////ASBFQAAAAAAAFgAUYN55MzrCRphAffpgyBh5daiXrAcBAAAAAAAA";
+  "cHNidP8BAFICAAAAAesycXqP/ZnHQ42fCokY4ws3HyKokiDXfsosfWt2t83wAAAAAAD9////ASBFQAAAAAAAFgAUYN55MzrCRphAffpgyBh5daiXrAcBAAAAAAAA";
 const sign = true;
 const sighashtype = "ALL|ANYONECANPAY";
 const bip32derivs = true;
 const result = await client.walletprocesspsbt(
-	{ psbt, sign, sighashtype, bip32derivs },
-	wallet
+  { psbt, sign, sighashtype, bip32derivs },
+  wallet
 );
 ```
 
@@ -1477,14 +1477,14 @@ await restClient.getChainInfo();
 ```javascript
 const checkmempool = true;
 const outpoints = [
-	{
-		txid: "e346be6c1ef4d24f3a26ea8e1b45a2645d339fbee9da8b9dc03aeef1c4179716",
-		n: 0,
-	},
-	{
-		txid: "e346be6c1ef4d24f3a26ea8e1b45a2645d339fbee9da8b9dc03aeef1c4179716",
-		n: 1,
-	},
+  {
+    txid: "e346be6c1ef4d24f3a26ea8e1b45a2645d339fbee9da8b9dc03aeef1c4179716",
+    n: 0,
+  },
+  {
+    txid: "e346be6c1ef4d24f3a26ea8e1b45a2645d339fbee9da8b9dc03aeef1c4179716",
+    n: 1,
+  },
 ];
 const format = "hex";
 await restClient.getUtxos({ checkmempool, outpoints, format });
