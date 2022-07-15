@@ -1,6 +1,6 @@
 {
   "name": "@indigonakamoto/rpc-omnilite",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A TypeScript library to make RPC and HTTP REST requests to OmniLite Litecoin Omni Layer. ",
   "main": "build/index.js",
   "type": "commonjs",
